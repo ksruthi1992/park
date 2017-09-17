@@ -37,7 +37,31 @@ In the works...
 
 ## Functional Requirement Specifications ##
 
-Additions Required...
+### Stakeholders ###
+	
+	The following people are the one's who might benefit and get involved with the app:
+	-Students
+	-Faculty staff/members
+	-Parking enforcers
+	-Maintenance employees
+	-Database manager
+	-More?.....
+
+### Actors and goals ###
+	
+**Cameras** -> Takes surveillance inside and outside the garage for security and safety
+
+**Hardwire sensors** -> Detects if a vehicle in a certain spot is present, "Green" light means vacant, "Red" means occupied.
+
+**Mobile App** -> This is where consumers check for open spots, and reserve for parking spots if the feature is available.
+
+**Database** -> Stores all the data, status and information in all parking spaces/garages.
+
+**Parking enforcers/employees** -> They maintain and scout the garage for safety and checks the validity of the permit in every vehicle.
+
+**Student/Faculty member** -> The primary consumers in the system.
+
+**More?** ->
 
 ### Priority Description of Requirements ###
 
