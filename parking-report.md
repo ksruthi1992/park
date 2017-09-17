@@ -39,7 +39,7 @@ In the works...
 
 ### Stakeholders ###
 	
-	The following people are the one's who might benefit and get involved with the app:
+The following people are the one's who might benefit and get involved with the app:
 	-Students
 	-Faculty staff/members
 	-Parking enforcers
