@@ -1,7 +1,7 @@
 # Finding Parking Report
 #
 
-##Contents##
+## Contents ##
 
 **[Project Proposal](https://github.com/CSUS-CSC-131-Fall2017/park/blob/master/Pink%20Unicorns%20-%20Proposal.md)**
 
@@ -18,7 +18,7 @@
 **Domain Model**
 
 
-##Description of Requirements##
+## Description of Requirements ##
 
 **RE-1:** System locates the nearest parking lot depending on the users current location.
 
@@ -32,4 +32,4 @@
 
 **RE-6:** System provides user option to navigate to the parking space.
 
-**RE-7:**System can provide user with data demonstrating expected flow derived from date, time, and lot.
+**RE-7:** System can provide user with data demonstrating expected flow derived from date, time, and lot.
