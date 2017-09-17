@@ -104,19 +104,19 @@ The following people are the one's who might benefit and get involved with the a
 
 ### Use Cases: Descriptions ###
 
-**UC-1:** User uses their current location to find a parking lot.
+**UC-1: FindLot** User uses their current location to find a parking lot.
 
-**UC-2:** User access real time data on a parking lot's vacancy.
+**UC-2: GetCurrentData** User access real time data on a parking lot's vacancy.
 
 **UC-3:** User chooses a parking lot.
 
 **UC-4:** User searches for available parking spaces.
 
-**UC-5:** User reserves a parking space for a brief time.
+**UC-5: ReserveSpot** User reserves a parking space for a brief time.
 
 **UC-6:** User chooses to use navigation to reach the parking space.
 
-**UC-7:** User access data information showing expected trends of occupancy per parking lot.
+**UC-7: GetPastData** User access data information showing expected trends of occupancy per parking lot.
 
 ## Domain Model ##
 
