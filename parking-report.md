@@ -55,17 +55,34 @@ The following people are the one's who might benefit and get involved with the a
 
 ### Actors and goals ###
 	
-**Cameras** Participating Actor -> Takes surveillance inside and outside the garage for security and safety
+**Cameras** Participating Actor 
 
-**Hardwired sensors** Initiating Actor -> Detects if a vehicle in a certain spot is present, "Green" light means vacant, "Red" means occupied.
+-> Takes surveillance inside and outside the garage for security and safety
 
-**Mobile App** Participating Actor -> This is where consumers check for open spots, and reserve for parking spots if the feature is available.
+**Hardwired sensors** Participating Actor 
 
-**Database** Participating Actor -> Stores all the data, status and information in all parking spaces/garages.
+-> Detects if a vehicle in a certain spot is present, "Green" light means vacant, "Red" means occupied.
 
-**Parking enforcers/employees** Initiating Actor -> They maintain and scout the garage for safety and checks the validity of the permit in every vehicle.
+**Digital Displays** Participating Actor
 
-**Student/Faculty member** Initiating Actor -> The primary consumers in the system.
+-> Goal is to display how many spots are remaining in a given lot.
+
+
+**Mobile App** Participating Actor 
+
+-> This is where consumers check for open spots, and reserve for parking spots if the feature is available.
+
+**Database** Participating Actor 
+
+-> Stores all the data, status and information in all parking spaces/garages.
+
+**Parking enforcers/employees** Initiating Actor 
+
+-> They maintain and scout the garage for safety and checks the validity of the permit in every vehicle.
+
+**Student/Faculty member** Initiating Actor 
+
+-> The primary consumers in the system. User has the ability to access the mobile app to view current and historical parking space vacancy
 
 **More?** ->
 
