@@ -5,22 +5,41 @@
 
 **[Project Proposal](https://github.com/CSUS-CSC-131-Fall2017/park/blob/master/Pink%20Unicorns%20-%20Proposal.md)**
 
-**Customer Requirements**
+**Introduction**
 
-- Priority Description of Requirements
+**Glossary**
 
 **System Requirements**
 
 **Functional Requirement Specifications**
 
-**Use Cases**
+- **Customer Requirements***
 
-- Descriptions
+	- Priority Description of Requirements
+
+- **Use Cases***
+
+	- Descriptions
 
 **Domain Model**
 
+## Introduction ##
 
-## Priority Description of Requirements ##
+***Customer Statement of Requirements.docx***	provides a good start for an introduction.
+
+## Glossary ##
+
+In the works...
+
+## System Requirements ##
+
+In the works...
+
+## Functional Requirement Specifications ##
+
+Additions Required...
+
+### Priority Description of Requirements ###
 
 **RE-1: 3** System locates user's current location to optimize search.
 
@@ -36,8 +55,7 @@
 
 **RE-7: 1** System can provide user with data demonstrating expected flow derived from date, time, and lot.
 
-
-## Use Cases: Descriptions ##
+### Use Cases: Descriptions ###
 
 **UC-1:** User uses their current location to find a parking lot.
 
@@ -52,3 +70,7 @@
 **UC-6:** User chooses to use navigation to reach the parking space.
 
 **UC-7:** User access data information showing expected trends of occupancy per parking lot.
+
+## Domain Model ##
+
+In the works...
