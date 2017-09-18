@@ -59,20 +59,20 @@ The following people are the one's who might benefit and get involved with the a
 
 -> Takes surveillance inside and outside the garage for security and safety
 
-**Hardwired sensors** Participating Actor 
+**Hardwired sensors** Participating Actor (**GetSpots** UC-4)
 
 -> Detects if a vehicle in a certain spot is present, "Green" light means vacant, "Red" means occupied.
 
-**Digital Displays** Participating Actor
+**Digital Displays** Participating Actor (**GetCurrentData** UC-2,UC-4)
 
 -> Goal is to display how many spots are remaining in a given lot.
 
 
-**Mobile App** Participating Actor 
+**Mobile App** Participating Actor (UC-2, **ReserveSpot** UC-5)
 
 -> This is where consumers check for open spots, and reserve for parking spots if the feature is available.
 
-**Database** Participating Actor 
+**Database** Participating Actor (UC-2, **GetPastData** UC-7)
 
 -> Stores all the data, status and information in all parking spaces/garages.
 
@@ -80,7 +80,7 @@ The following people are the one's who might benefit and get involved with the a
 
 -> They maintain and scout the garage for safety and checks the validity of the permit in every vehicle.
 
-**Student/Faculty member** Initiating Actor 
+**Student/Faculty member** Initiating Actor (UC-2, UC-7)
 
 -> The primary consumers in the system. User has the ability to access the mobile app to view current and historical parking space vacancy
 
