@@ -102,6 +102,8 @@ The following people are the one's who might benefit and get involved with the a
 
 **RE-7: 1** System can provide user with data demonstrating expected flow derived from date, time, and lot.
 
+**RE-8: System can lookup user schedule and suggest parking lots that are available and prioritize based on destination.
+
 ### Use Cases: Descriptions ###
 
 **UC-1: FindLot** User uses their current location to find a parking lot.
@@ -117,6 +119,12 @@ The following people are the one's who might benefit and get involved with the a
 **UC-6: NavigateToLot** User chooses to use navigation to reach the parking space.
 
 **UC-7: GetPastData** User access data information showing expected trends of occupancy per parking lot.
+
+**UC-8: Enter Scheduer** User can create a schedule of destinations based on weekly calendar so that the system can suggest parking lots.
+
+**UC-9: SuggestLots** System suggests parking lots by available number of spots and users scheduled destination.
+
+**
 
 ## Traceability Table ##
 
