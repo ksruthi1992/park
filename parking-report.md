@@ -137,6 +137,34 @@ The following people are the one's who might benefit and get involved with the a
 	REQ7													 X	
 	--------------------------------------------------------------------------------------------------------------
 
+## Fully Dressed Use Case Descriptions ##
+###UC1 - Find Lot###
+**Initiating Actor:** Student/Faculty Member
+
+**Goal:** User wants to find closest possible parking spot from their current location
+
+**Participating Actors:** Sensors, Database, Google Maps API, Mobile App
+
+**Preconditions:** A parking spot must be available, all services must be up and running
+
+**PostConditions:** User is given directions on how to get to parking spot
+
+**Main Success Scenario:**
+
+1) User opens up app with location permissions enabled
+
+2) Google Maps is able to locate phone
+
+3) User requests to be guided to closest possible vacant parking spot
+
+4) Database returns all possible parking places
+
+5) Google Maps chooses closest spot
+
+6) Google Maps uses navigation to direct user to parking place
+
+**Extensions:** Spot gets taken by another vehicle before user has arrived at desired parking spot.
+
 ## Domain Model ##
 
 In the works...
