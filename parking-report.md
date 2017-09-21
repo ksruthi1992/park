@@ -80,21 +80,23 @@ The following people are the one's who might benefit and get involved with the a
 
 ### Priority Description of Requirements ###
 
-**RE-1: 3** System locates user's current location to optimize search.
+**REQ-1: 3** System locates user's current location to optimize search.
 
-**RE-2: 2** System provides user with real time data showing what parking lots are the fullest.
+**REQ-2: 2** System provides user with real time data showing what parking lots are the fullest.
 
-**RE-3: 5** System shall provide user with lot options to choose from.
+**REQ-3: 5** System shall provide user with lot options to choose from.
 
-**RE-4: 5** System accesses the database to  locate vacant parking spaces.
+**REQ-4: 5** System accesses the database to locate vacant parking spaces.
 
-**RE-5: 4** User is able to reserve the parking space for brief time, while they drive to the location.
+**REQ-5: 4** User is able to reserve the parking space for brief time, while they drive to the location.
 
-**RE-6: 3** System provides user option to navigate to the parking space.
+**REQ-6: 3** System provides user option to navigate to the parking space.
 
-**RE-7: 1** System can provide user with data demonstrating expected flow derived from date, time, and lot.
+**REQ-7: 1** System can provide user with data demonstrating expected flow derived from date, time, and lot.
 
-**RE-8: System can lookup user schedule and suggest parking lots that are available and prioritize based on destination.
+**REQ-8: System can lookup user schedule and suggest parking lots that are available and prioritize based on destination.
+
+**REQ-9: 5** System shall record all occupied and vacant spots to the database on real time. 
 
 ### Use Cases: Descriptions ###
 
@@ -136,11 +138,13 @@ The following people are the one's who might benefit and get involved with the a
 	--------------------------------------------------------------------------------------------------------------
 	REQ7													 X	
 	--------------------------------------------------------------------------------------------------------------
+	REQ8
+	--------------------------------------------------------------------------------------------------------------
+	REQ9	 		 X		 		 X		 X				 X	
 
 ## Fully Dressed Use Case Descriptions ##
 ### UC1 - Find Lot ###
 **Related Requirements:** REQ1, REQ3
-
 **Initiating Actor:** Student/Faculty Member
 
 **Goal:** User wants to find closest possible parking spot from their current location
@@ -169,7 +173,7 @@ The following people are the one's who might benefit and get involved with the a
 
 ## Fully Dressed Use Case Descriptions ##
 ### UC2 - Get Current Data ###
-**Related Requirements:** REQ2, REQ3, REQ4
+**Related Requirements:** REQ2, REQ3, REQ4, REQ9
 
 **Initiating Actor:** Student/Faculty Member, Parking enforcers/employees
 
