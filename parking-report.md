@@ -139,6 +139,8 @@ The following people are the one's who might benefit and get involved with the a
 
 ## Fully Dressed Use Case Descriptions ##
 ### UC1 - Find Lot ###
+**Related Requirements:** REQ1, REQ3
+
 **Initiating Actor:** Student/Faculty Member
 
 **Goal:** User wants to find closest possible parking spot from their current location
@@ -164,6 +166,28 @@ The following people are the one's who might benefit and get involved with the a
 6) Google Maps uses navigation to direct user to parking place
 
 **Extensions:** Spot gets taken by another vehicle before user has arrived at desired parking spot.
+
+## Fully Dressed Use Case Descriptions ##
+### UC2 - Get Current Data ###
+**Related Requirements:** REQ2, REQ3, REQ4
+
+**Initiating Actor:** Student/Faculty Member, Parking enforcers/employees
+
+**Goal:** User wants to see the current status on all parking areas
+
+**Participating Actors:** Sensors, Database, Digital Displays, Mobile App
+
+**Preconditions:** Must have mobile app in order to see all used and empty spots in the parking lot/garage selected
+
+**PostConditions:** User is given all the vacant spots to choose from
+
+**Main Success Scenario:**
+
+1) User opens up app with location permissions enabled
+
+2) Application gives the option to choose what parking area the user want to enter on.
+
+3) Application zooms in on the chosen parking area, displaying all the used and empty spots on real time
 
 ## Domain Model ##
 
