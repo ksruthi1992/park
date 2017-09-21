@@ -138,7 +138,7 @@ The following people are the one's who might benefit and get involved with the a
 	--------------------------------------------------------------------------------------------------------------
 
 ## Fully Dressed Use Case Descriptions ##
-###UC1 - Find Lot###
+### UC1 - Find Lot ###
 **Initiating Actor:** Student/Faculty Member
 
 **Goal:** User wants to find closest possible parking spot from their current location
