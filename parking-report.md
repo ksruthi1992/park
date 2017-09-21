@@ -47,17 +47,10 @@ The following people are the one's who might benefit and get involved with the a
 
 -Parking enforcers
 
--Maintenance employees
-
 -Database manager	
 
--More?.....
 
 ### Actors and goals ###
-	
-**Cameras** Participating Actor 
-
--> Takes surveillance inside and outside the garage for security and safety
 
 **Hardwired sensors** Participating Actor (**GetSpots** UC-4)
 
@@ -84,7 +77,6 @@ The following people are the one's who might benefit and get involved with the a
 
 -> The primary consumers in the system. User has the ability to access the mobile app to view current and historical parking space vacancy
 
-**More?** ->
 
 ### Priority Description of Requirements ###
 
