@@ -24,12 +24,20 @@
 	- *[Descriptions](#case_descriptions)*
 
 	- *[Full Case Descriptions](#full_desc)*
- 
-- *[Traceability Table](#trace_table)*
-
 	
+	- *[Use Case Diagram](#use_diagram)*
+ 
+	- *[Traceability Table](#trace_table)*
 
-**[Domain Model](#domain_model)**
+**[Nonfunctional Requirements](#Nonfunction_Reqs)**
+	
+**[Domain Analysis](#Domain_Analy)**
+
+- *[Domain Model](#domain_model)*
+
+- *[System Operation Contacts](#op_contacts)*
+
+- *[Mathematical Model](#math_model)*
 
 ## <a name = "Introduction"></a>Introduction ##
 
@@ -233,7 +241,18 @@ The following people are the one's who might benefit and get involved with the a
 
 3) Once in parking spot sensor sends parking space is non-vacant to database.
 
+### <a name = use_diagram></a> Use Case Diagram###
 
-## <a name = domain_model></a> Domain Model ##
+### <a name = trace_table></a> Traceability Table###
+
+## <a name = Nonfunctional_Reqs></a> Nonfunctional Requirements ##
+
+## <a name = Domain_Analysis></a> Domain Analysis ##
+
+### <a name = domain_model></a> Domain Model ###
 
 In the works...
+
+### <a name = op_contacts></a> System Operation Contacts ###
+
+### <a name = math_model></a> Mathematical Model ###
