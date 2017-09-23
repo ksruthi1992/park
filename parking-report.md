@@ -264,6 +264,28 @@ The following people are the one's who might benefit and get involved with the a
 
 3) Once in parking spot sensor sends parking space is non-vacant to database.
 
+### UC7 - Get Past Data ###
+**Related Requirements:** REQ3, REQ7, REQ9
+
+**Initiating Actor:** Students, Faculty Members, Parking enforcement
+
+**Goal:** User wants to access data showing the expected trends of occupancy per lot
+
+**Participating Actors:** Sensors, Database, Digital Displays, Mobile App
+
+**Preconditions:** Must have mobile app installed to access the database information keeping track of the trends of parking occupancy from past days
+
+**Post-Conditions:** User is given all data information that was derived from past days
+
+**Main Success Scenario:**
+
+1) User uses app to indicate which parking lot data to access
+
+2) Database returns query results 
+
+3) Data is presented to user through the application interface
+
+
 ### <a name = use_diagram></a> Use Case Diagram###
 
 ### <a name = trace_table></a> Traceability Table###
