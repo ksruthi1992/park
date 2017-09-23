@@ -286,9 +286,9 @@ The following people are the one's who might benefit and get involved with the a
 3) Data is presented to user through the application interface
 
 
-### <a name = use_diagram></a> Use Case Diagram###
+### <a name = use_diagram></a> Use Case Diagram ###
 
-### <a name = trace_table></a> Traceability Table###
+### <a name = trace_table></a> Traceability Table ###
 
 ## <a name = Nonfunctional_Reqs></a> Nonfunctional Requirements ##
 
