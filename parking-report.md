@@ -1,41 +1,49 @@
-# Finding Parking Report
+# Parking Finder Report
 #
 
 ## Contents ##
 
 **[Project Proposal](https://github.com/CSUS-CSC-131-Fall2017/park/blob/master/Pink%20Unicorns%20-%20Proposal.md)**
 
-**Introduction**
+**[Introduction](#Introduction)**
 
-**Glossary**
+**[Glossary](#Glossary)**
 
-**System Requirements**
+**[System Requirements](#System_Requirements)**
 
-**Functional Requirement Specifications**
+**[Functional Requirement Specifications](#Functional_Requirement)**
 
-- **Customer Requirements***
+- *[Stake Holders](#stake_holders)*
 
-	- Priority Description of Requirements
+- *[Customer Requirements](#cust_reqs)*
 
-- **Use Cases***
+- *[Actors and Goals](#actors_goals)*
 
-	- Descriptions
+- *[Use Cases](#use_cases)*
 
-**Domain Model**
+	-*[Descriptions](#case_description)*
 
-## Introduction ##
+	-*[Full Case Descriptions](#full_desc)*
+ 
+- *[Traceability Table](#trace_table)*
+
+	
+
+**[Domain Model](#domain_model)**
+
+## <a name = "Introduction"></a>Introduction ##
 
 ***Customer Statement of Requirements.docx***	provides a good start for an introduction.
 
-## Glossary ##
+## <a name = "Glossary"></a>Glossary ##
 
 In the works...
 
-## System Requirements ##
+## <a name = "System_Requirements"></a>System Requirements ##
 
 In the works...
 
-## Functional Requirement Specifications ##
+## <a name = "Functional_Requirement"></a>Functional Requirement Specifications ##
 
 ### Stakeholders ###
 	
@@ -50,7 +58,7 @@ The following people are the one's who might benefit and get involved with the a
 -Database manager	
 
 
-### Actors and goals ###
+### <a name = "actors_goals"></a>Actors and goals ###
 
 **Hardwired sensors** Participating Actor (**GetSpots** UC-4)
 
@@ -98,11 +106,11 @@ The following people are the one's who might benefit and get involved with the a
 
 **REQ-7: 1** System can provide user with data demonstrating expected flow derived from date, time, and lot.
 
-**REQ-8: System can lookup user schedule and suggest parking lots that are available and prioritize based on destination.
+**REQ-8:**  System can lookup user schedule and suggest parking lots that are available and prioritize based on destination.
 
 **REQ-9: 5** System shall record all occupied and vacant spots to the database on real time. 
 
-### Use Cases: Descriptions ###
+### <a name=case_descriptions></a>Use Cases: Descriptions ###
 
 **UC-1: FindLot** User uses their current location to find a parking lot.
 
@@ -124,7 +132,7 @@ The following people are the one's who might benefit and get involved with the a
 
 **
 
-## Traceability Table ##
+## <a name = trace_table></a>Traceability Table ##
 
 		UC1		UC2		UC3		UC4		UC5		UC6		UC7
 	--------------------------------------------------------------------------------------------------------------
@@ -146,7 +154,7 @@ The following people are the one's who might benefit and get involved with the a
 	--------------------------------------------------------------------------------------------------------------
 	REQ9	 		 X		 		 X		 X				 X	
 
-## Fully Dressed Use Case Descriptions ##
+## <a name = full_desc></a>Fully Dressed Use Case Descriptions ##
 ### UC1 - Find Lot ###
 **Related Requirements:** REQ1, REQ3
 **Initiating Actor:** Student/Faculty Member
@@ -226,6 +234,6 @@ The following people are the one's who might benefit and get involved with the a
 3) Once in parking spot sensor sends parking space is non-vacant to database.
 
 
-## Domain Model ##
+## <a name = domain_model></a> Domain Model ##
 
 In the works...
