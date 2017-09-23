@@ -1,14 +1,13 @@
 package com.nolanroe.parkapp;
 
-import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
@@ -39,8 +38,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sacStateLot7 = new LatLng(38.555790, -121.421106);
-        mMap.addMarker(new MarkerOptions().position(sacStateLot7).title("Marker in Lot 7"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sacStateLot7));
+        LatLng sacState = new LatLng(38.56, -121.421823);
+        // mMap.addMarker(new MarkerOptions().position(sacState).title("Sac State"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sacState, 15));
     }
 }
