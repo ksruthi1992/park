@@ -212,6 +212,29 @@ The following people are the one's who might benefit and get involved with the a
 
 3) Application zooms in on the chosen parking area, displaying all the used and empty spots on real time
 
+### UC4 - Get Spots ###
+**Related Requirements:** REQ2, REQ3, REQ4, REQ9
+
+**Initiating Actor:** Students, Faculty Members, Parking enforcement
+
+**Goal:** User wants to search for available parking spaces
+
+**Participating Actors:** Sensors, Database, Digital Displays, Mobile App
+
+**Preconditions:** Must have mobile app installed to locate all open parking spaces and see those that are occupied
+
+**Post-Conditions:** User is given all open parking spaces
+
+**Main Success Scenario:**
+
+1) User uses app which shows their current location
+
+2) User is given options of different parking lots through the mobile app
+
+3) User makes a selection
+
+4) Application shows user the available parking spaces from the users current location selection
+
 ### UC6 - Navigate To Lot ###
 **Related Requirements:** REQ4, REQ6
 
