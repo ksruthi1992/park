@@ -21,9 +21,9 @@
 
 - *[Use Cases](#use_cases)*
 
-	-*[Descriptions](#case_description)*
+	- *[Descriptions](#case_descriptions)*
 
-	-*[Full Case Descriptions](#full_desc)*
+	- *[Full Case Descriptions](#full_desc)*
  
 - *[Traceability Table](#trace_table)*
 
@@ -45,7 +45,7 @@ In the works...
 
 ## <a name = "Functional_Requirement"></a>Functional Requirement Specifications ##
 
-### Stakeholders ###
+### <a name = stake_holders></a>Stakeholders ###
 	
 The following people are the one's who might benefit and get involved with the app:
 
