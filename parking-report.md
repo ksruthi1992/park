@@ -171,7 +171,6 @@ The following people are the one's who might benefit and get involved with the a
 
 **Extensions:** Spot gets taken by another vehicle before user has arrived at desired parking spot.
 
-## Fully Dressed Use Case Descriptions ##
 ### UC2 - Get Current Data ###
 **Related Requirements:** REQ2, REQ3, REQ4, REQ9
 
