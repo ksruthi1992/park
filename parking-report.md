@@ -69,6 +69,10 @@ The following people are the one's who might benefit and get involved with the a
 
 -> Stores all the data, status and information in all parking spaces/garages.
 
+**Google Maps API** Participating Actor (**NavigateToLot** UC-1, UC-6)
+
+-> Guides user to their parking spot.
+
 **Parking enforcers/employees** Initiating Actor 
 
 -> They maintain and scout the garage for safety and checks the validity of the permit in every vehicle.
@@ -191,6 +195,36 @@ The following people are the one's who might benefit and get involved with the a
 2) Application gives the option to choose what parking area the user want to enter on.
 
 3) Application zooms in on the chosen parking area, displaying all the used and empty spots on real time
+
+### UC6 - Navigate To Lot ###
+**Related Requirements:** REQ4, REQ6
+
+**Initiating Actor:** Student/Faculty Member
+
+**Goal:** Navigates the user to their reserved parking spot or available parking spots.
+
+**Participating Actors:** Sensors, Database, Mobile App,  Google Maps API
+
+**Preconditions:** User must have GPS turned on and needs to have reserved or located the parking spot on the app.
+
+**PostConditions:** User is guided, step-by-step, towards a parking spot.
+
+**Main Success Scenario:**
+
+1) User has located desired parking spot.
+
+2) User is then guided, step-by-step, to a reserved or open parking spot.
+
+3) Once in parking spot sensor sends parking space is non-vacant to database.
+
+**Alternative:**
+
+1) Parking Spot is non-vacant.
+
+2) Redirects user to another, close-by, parking spot.
+
+3) Once in parking spot sensor sends parking space is non-vacant to database.
+
 
 ## Domain Model ##
 
