@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //create an intent to get over to MapsActivity class
         Intent i = new Intent(this, MapsActivity.class);
         startActivity(i);
 

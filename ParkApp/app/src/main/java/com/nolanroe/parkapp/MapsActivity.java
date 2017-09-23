@@ -41,5 +41,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng sacState = new LatLng(38.56, -121.421823);
         // mMap.addMarker(new MarkerOptions().position(sacState).title("Sac State"));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sacState, 15));
+
     }
 }
