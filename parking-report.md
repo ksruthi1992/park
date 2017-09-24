@@ -156,7 +156,7 @@ The following people are the one's who might benefit and get involved with the a
 
 **UC-9: SuggestLots** System suggests parking lots by available number of spots and users scheduled destination.
 
-**
+**UC-10: TicketViolations** Allows a parking enforcer to ticket a driver if they violate the parking rules.
 
 ## <a name = trace_table></a>Traceability Table ##
 
@@ -183,6 +183,7 @@ The following people are the one's who might benefit and get involved with the a
 ## <a name = full_desc></a>Fully Dressed Use Case Descriptions ##
 ### UC1 - Find Lot ###
 **Related Requirements:** REQ1, REQ3
+
 **Initiating Actor:** Student/Faculty Member
 
 **Goal:** User wants to find closest possible parking spot from their current location
@@ -328,8 +329,31 @@ The following people are the one's who might benefit and get involved with the a
 
 5) The app saves the suggested destination schedule for the user. 
 
+### UC10 - TicketViolations ###
 
+**Related Requirements:** REQ2, REQ4, REQ9
 
+**Initiating Actor:** Parking enforcers/employees
+
+**Goal:** User wants to maintain the parking area by making sure every driver follows the parking rules.
+
+**Participating Actors:** Sensors, Digital Displays, Mobile App
+
+**Preconditions:** Employee/Enforcer must have all the equipments needed while partrolling the area.
+
+**PostConditions:** A ticket will be placed in a vehicle if the driver violated a parking rule.
+
+**Main Success Scenario:**
+
+1) Enforcer patrols the area to check every vechicle.
+
+2) Mobile app can be a supplementary tool for the enforcer to check the parking area.
+
+3) A ticket will be placed in a vehicle if the driver violated one of the parking rules:
+ -No parking permit/daily parking pass in the vechicle.
+ -Vehicle with a student permit parked on a staff parking.
+ -Vehicle without a handicap parking permit parked on a handicap parking spot.
+ -Vehicle parked on a reserved spot, non-parking spot, or parked in two or more spots.
 
 ### <a name = use_diagram></a> Use Case Diagram ###
 
