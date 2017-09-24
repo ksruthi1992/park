@@ -41,7 +41,25 @@
 
 ## <a name = "Introduction"></a>Introduction ##
 
-***Customer Statement of Requirements.docx***	provides a good start for an introduction.
+**Goal**
+
+Our goal is to help a university driver quickly and easily locate an available space in an university campus parking lot. Our solution will help the driver easily determine which parking lot provides the highest availability of vacant spaces, based on either their approach or destination. 
+
+**Problem Statement**
+
+Currently, when a driver goes to a university campus s/he is unable to determine which parking lot might have spaces available, and must first guess which parking lot to enter and then drive lane by lane through the lot hoping to find a vacant spot. If s/he is unable to find a vacant spot in the current parking lot, then s/he must guess which lot to try next and repeat the painful process of traversing lane by lane to try and find a spot. 
+
+**Proposed Solution**
+
+Our application will help a user quickly and easily find an available space in a campus parking lot in the following ways:
+
+* Our solution will route a user to the parking lot with the most available spaces based on either their approach to the campus or final destination on campus. 
+* Our solution will automatically reserve a candidate space for a user and route them to the location. 
+* Since a reserved spot might become occupied by another driver before our user arrives at the location, our solution will be able to quickly reroute the user to nearest available vacancy.
+* Significantly, our solution will provide our user with audio directions since s/he will be driving while looking for an available parking space.
+
+For additional details about our solution, refer to <a ref="Customer Statement of Requirements.docx">***Customer Statement of Requirements.docx***</a>.
+
 
 ## <a name = "Glossary"></a>Glossary ##
 
