@@ -285,6 +285,33 @@ The following people are the one's who might benefit and get involved with the a
 
 3) Data is presented to user through the application interface
 
+### UC8 - Scheduler###
+**Related Requirements:** REQ3, REQ4, REQ9
+
+**Initiating Actor:** Students and Faculty Members
+
+**Goal:** User wants to create a schedule of destinations based on weekly calendar so that the system can suggest parking lots.
+
+**Participating Actors:** Database, Mobile App, Google Maps API
+
+**Preconditions:** GPS enabled, internet connection to access database, signed into application.
+
+**Post-Conditions:** The app will suggest a certain schedule destination based on their weekly calendar.
+
+**Main Success Scenario:**
+
+1) User signs into application.
+
+2) User goes to schedule section of app.
+
+3) User enters their weekly schedule, such as class location and start times, into app.
+
+4) The app will then suggest which parking lots to park at for each day of the week.
+
+5) The app saves the suggested destination schedule for the user. 
+
+
+
 
 ### <a name = use_diagram></a> Use Case Diagram ###
 
