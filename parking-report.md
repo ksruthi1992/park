@@ -165,11 +165,11 @@ The following people are the one's who might benefit and get involved with the a
 	--------------------------------------------------------------------------------------------------------------
 	REQ1	 X
 	--------------------------------------------------------------------------------------------------------------
-	REQ2		 X	 X	 X		 		 		 X	 X
+	REQ2		 X	 X	 X		 		 	 X	 X	 X
 	--------------------------------------------------------------------------------------------------------------
 	REQ3	 X	 X	 X 	 X		 	 X	 X	 X
 	--------------------------------------------------------------------------------------------------------------
-	REQ4		 X		 X	 X	 X		 X		 X	 X
+	REQ4		 X		 X	 X	 X		 X	 X	 X	 X
 	--------------------------------------------------------------------------------------------------------------
 	REQ5					 X				
 	--------------------------------------------------------------------------------------------------------------
@@ -353,6 +353,29 @@ The following people are the one's who might benefit and get involved with the a
 4) The app will then suggest which parking lots to park at for each day of the week.
 
 5) The app saves the suggested destination schedule for the user. 
+
+### UC9 - SuggestLots ###
+**Related Requirements:** REQ3,  REQ4
+
+**Initiating Actor:** Students and Faculty Members
+
+**Goal:** To quickly suggest the user with parking lots depending on the availability of parking spaces.
+
+**Participating Actors:** Database, Mobile App, 
+
+**Preconditions:** GPS enabled, internet connection to access database, signed into application.
+
+**Post-Conditions:** App suggests the user with parking lots that are available to park at.
+
+**Main Success Scenario:**
+
+1) User opens application.
+
+2) User taps on suggestion lots part of app.
+
+3) App accesses database.
+
+4) App quickly suggests user with parking lots that have the most availability.
 
 ### UC10 - TicketViolations ###
 
