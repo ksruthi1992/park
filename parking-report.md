@@ -329,7 +329,7 @@ The following people are the one's who might benefit and get involved with the a
 
 3) Data is presented to user through the application interface
 
-### UC8 - Scheduler###
+### UC8 - Scheduler ###
 **Related Requirements:** REQ3, REQ4, REQ9
 
 **Initiating Actor:** Students and Faculty Members
@@ -353,6 +353,8 @@ The following people are the one's who might benefit and get involved with the a
 4) The app will then suggest which parking lots to park at for each day of the week.
 
 5) The app saves the suggested destination schedule for the user. 
+
+<a href="https://ibb.co/gYehKQ"><img src="https://preview.ibb.co/bGHDR5/UC_8.png" alt="UC_8" border="0"></a>
 
 ### UC9 - SuggestLots ###
 **Related Requirements:** REQ3,  REQ4
