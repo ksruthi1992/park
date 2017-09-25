@@ -9,8 +9,6 @@
 
 **[Glossary](#Glossary)**
 
-**[System Requirements](#System_Requirements)**
-
 **[Functional Requirement Specifications](#Functional_Requirement)**
 
 - *[Stake Holders](#stake_holders)*
@@ -28,6 +26,8 @@
 	- *[Use Case Diagram](#use_diagram)*
  
 	- *[Traceability Table](#trace_table)*
+
+	- *[System Sequence Diagrams](#seq_diagram)*
 
 **[Nonfunctional Requirements](#Nonfunction_Reqs)**
 	
@@ -432,9 +432,12 @@ The following people are the one's who might benefit and get involved with the a
 
 ### <a name = use_diagram></a> Use Case Diagram ###
 
-![image](UCDiagram.png)
+![Screenshot](diagrams/UCDiagram.png)
 
-### <a name = trace_table></a> Traceability Table ###
+### <a name = seq_diagram></a> System Sequence Diagram ###
+![image](diagrams/Find_Lot.png)
+
+![image](diagrams/NavigateTo.png)
 
 ## <a name = Nonfunctional_Reqs></a> Nonfunctional Requirements ##
 
