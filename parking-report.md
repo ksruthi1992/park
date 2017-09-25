@@ -232,6 +232,30 @@ The following people are the one's who might benefit and get involved with the a
 
 3) Application zooms in on the chosen parking area, displaying all the used and empty spots on real time
 
+### UC3 - Get Lot ###
+**Related Requirements:** REQ2, REQ3, REQ4
+
+**Initiating Actor:** Students, Faculty, Parking Enforcement
+
+**Goal:** User wants to check the current state of a parking lot
+
+**Participating Actors:** Sensors, Database, Mobile App
+
+**Preconditions:** Mobile app is open on phone. Sensors and Database are functioning and up to date
+
+**Post Conditions:** App displays all parking spots in a certain lot and displays each spot's state
+
+**Main Success Sceneraio:**
+
+1) User opens up the app
+
+2) App displays heat map of Sac State with all parking lots being clickable
+
+3) User clicks on a lot
+
+4) App zooms in on the lot and displays current state of all parking spots in that lot
+
+
 ### UC4 - Get Spots ###
 **Related Requirements:** REQ2, REQ3, REQ4, REQ9
 
