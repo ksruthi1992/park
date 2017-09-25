@@ -432,6 +432,8 @@ The following people are the one's who might benefit and get involved with the a
 
 ### <a name = use_diagram></a> Use Case Diagram ###
 
+![image](UCDiagram.png)
+
 ### <a name = trace_table></a> Traceability Table ###
 
 ## <a name = Nonfunctional_Reqs></a> Nonfunctional Requirements ##
