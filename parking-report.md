@@ -94,7 +94,6 @@ The following people are the one's who might benefit and get involved with the a
 
 -> Goal is to display how many spots are remaining in a given lot.
 
-
 **Mobile App** Participating Actor (UC-2, **ReserveSpot** UC-5)
 
 -> This is where consumers check for open spots, and reserve for parking spots if the feature is available.
@@ -158,17 +157,19 @@ The following people are the one's who might benefit and get involved with the a
 
 **UC-10: TicketViolations** Allows a parking enforcer to ticket a driver if they violate the parking rules.
 
+**UC-11: ManualOverride** Allows a parking enforcer to change the status of a parking spot by manually closing and opening it through the system.
+
 ## <a name = trace_table></a>Traceability Table ##
 
-		UC1	UC2	UC3	UC4	UC5	UC6	UC7	UC8	UC9	UC10
+		UC1	UC2	UC3	UC4	UC5	UC6	UC7	UC8	UC9	UC10	UC11
 	--------------------------------------------------------------------------------------------------------------
 	REQ1	 X
 	--------------------------------------------------------------------------------------------------------------
-	REQ2		 X	 X	 X		 		 		 X
+	REQ2		 X	 X	 X		 		 		 X	 X
 	--------------------------------------------------------------------------------------------------------------
-	REQ3	 X	 X	 X 	 X		 	 X	 X   X
+	REQ3	 X	 X	 X 	 X		 	 X	 X	 X
 	--------------------------------------------------------------------------------------------------------------
-	REQ4		 X		 X	 X	 X		 X		 X
+	REQ4		 X		 X	 X	 X		 X		 X	 X
 	--------------------------------------------------------------------------------------------------------------
 	REQ5					 X				
 	--------------------------------------------------------------------------------------------------------------
@@ -178,7 +179,7 @@ The following people are the one's who might benefit and get involved with the a
 	--------------------------------------------------------------------------------------------------------------
 	REQ8
 	--------------------------------------------------------------------------------------------------------------
-	REQ9	 	 X		  X	 X		 X	 X		 X	
+	REQ9	 	 X		  X	 X		 X	 X		 X	 X	
 
 ## <a name = full_desc></a>Fully Dressed Use Case Descriptions ##
 ### UC1 - Find Lot ###
@@ -350,10 +351,37 @@ The following people are the one's who might benefit and get involved with the a
 2) Mobile app can be a supplementary tool for the enforcer to check the parking area.
 
 3) A ticket will be placed in a vehicle if the driver violated one of the parking rules:
+ 
  -No parking permit/daily parking pass in the vechicle.
+ 
  -Vehicle with a student permit parked on a staff parking.
+ 
  -Vehicle without a handicap parking permit parked on a handicap parking spot.
- -Vehicle parked on a reserved spot, non-parking spot, or parked in two or more spots.
+ 
+ -Vehicle parked on a reserved spot, closed spot, non-parking spot, or parked in two or more spots.
+ 
+### UC11 - ManualOverride ###
+
+**Related Requirements:** REQ2, REQ4, REQ9
+
+**Initiating Actor:** Parking enforcers/employees
+
+**Goal:** User has the access to manually change the status of a certain spot.
+
+**Participating Actors:** Sensors, Digital Displays, Mobile App, Database
+
+**Preconditions:** Parking lot must be vacant.
+
+**PostConditions:** A parking lot will be closed/open.
+
+**Main Success Scenario:**
+
+1) Parking Enforcer will choose a certain spot or spots.
+
+2) Parking Enforcer can manually change the status of a spot if it needs to be down for maintenance or reservation.
+
+3) The Sensor will display green if it's open, and red if it's closed.
+
 
 ### <a name = use_diagram></a> Use Case Diagram ###
 
