@@ -439,6 +439,9 @@ The following people are the one's who might benefit and get involved with the a
 ### <a name = seq_diagram></a> System Sequence Diagram ###
 ![image](diagrams/Find_Lot.png)
 
+![image](diagrams/UC2-GetCurrentData.png)
+
+
 ![image](diagrams/NavigateTo.png)
 
 ## <a name = Nonfunctional_Reqs></a> Nonfunctional Requirements ##
