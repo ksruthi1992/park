@@ -441,6 +441,7 @@ The following people are the one's who might benefit and get involved with the a
 
 ![image](diagrams/UC2-GetCurrentData.png)
 
+![image](diagrams/UC3-GetLot.png)
 
 ![image](diagrams/NavigateTo.png)
 
