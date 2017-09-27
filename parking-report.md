@@ -300,6 +300,8 @@ The following people are the one's who might benefit and get involved with the a
 
 3) Once in parking spot sensor sends parking space is non-vacant to database.
 
+<a href="https://ibb.co/e2HZ15"><img src="https://preview.ibb.co/iumSM5/Sequence_Diagram_Uc_6.png" alt="Sequence_Diagram_Uc_6" border="0"></a>
+
 **Alternative:**
 
 1) Parking Spot is non-vacant.
