@@ -12,12 +12,12 @@
         "source": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\build\\intermediates\\bundles\\debug\\res\\raw\\amu_default_balloon.kml"
     },
     {
-        "merged": "C:\\Users\\Danolanater\\Desktop\\Programming\\SideProjects\\android-maps-utils\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\amu_multigeometry_placemarks.kml",
-        "source": "C:\\Users\\Danolanater\\Desktop\\Programming\\SideProjects\\android-maps-utils\\library\\build\\intermediates\\bundles\\debug\\res\\raw\\amu_multigeometry_placemarks.kml"
-    },
-    {
         "merged": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\amu_cdata.kml",
         "source": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\build\\intermediates\\bundles\\debug\\res\\raw\\amu_cdata.kml"
+    },
+    {
+        "merged": "C:\\Users\\Danolanater\\Desktop\\Programming\\SideProjects\\android-maps-utils\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\amu_multigeometry_placemarks.kml",
+        "source": "C:\\Users\\Danolanater\\Desktop\\Programming\\SideProjects\\android-maps-utils\\library\\build\\intermediates\\bundles\\debug\\res\\raw\\amu_multigeometry_placemarks.kml"
     },
     {
         "merged": "C:\\Users\\Danolanater\\Desktop\\Programming\\SideProjects\\android-maps-utils\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\amu_unsupported.kml",

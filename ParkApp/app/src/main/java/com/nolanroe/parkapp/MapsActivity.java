@@ -1,5 +1,6 @@
 package com.nolanroe.parkapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 
@@ -8,6 +9,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.maps.android.data.Feature;
 import com.google.maps.android.data.kml.KmlLayer;
 
 import org.xmlpull.v1.XmlPullParserException;
@@ -50,7 +52,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         try {
             KmlLayer lot7 = new KmlLayer(mMap, R.raw.sac_state_parking, getApplicationContext());
             lot7.addLayerToMap();
-            
+            lot7.setOnFeatureClickListener(new KmlLayer.OnFeatureClickListener() {
+                @Override
+                public void onFeatureClick(Feature feature) {
+                    Intent i = new Intent(getApplicationContext(),Lot7Activity.class);
+                    startActivity(i);
+                }
+            });
         }
         catch (IOException ex) {
             ex.printStackTrace();
