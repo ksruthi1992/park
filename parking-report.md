@@ -439,7 +439,7 @@ The following people are the one's who might benefit and get involved with the a
 ![image](diagrams/UC-Diagram.png)
 
 ### <a name = seq_diagram></a> System Sequence Diagram ###
-![image](diagrams/Find_Lot.png)
+![image](diagrams/find-lot.png)
 
 ![image](diagrams/UC2-GetCurrentData.png)
 
@@ -447,7 +447,7 @@ The following people are the one's who might benefit and get involved with the a
 
 ![image](diagrams/UC11-ManualOverride.png)
 
-![image](diagrams/NavigateTo.png)
+![image](diagrams/navigate.png)
 
 ## <a name = Nonfunctional_Reqs></a> Nonfunctional Requirements ##
 **REQ-7:** System can provide user with data demonstrating expected flow derived from date, time, and lot.
