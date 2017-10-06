@@ -436,7 +436,7 @@ The following people are the one's who might benefit and get involved with the a
 
 ### <a name = use_diagram></a> Use Case Diagram ###
 
-![Screenshot](diagrams/UCDiagram.png)
+![image](diagrams/UC-Diagram.png)
 
 ### <a name = seq_diagram></a> System Sequence Diagram ###
 ![image](diagrams/Find_Lot.png)
@@ -450,13 +450,37 @@ The following people are the one's who might benefit and get involved with the a
 ![image](diagrams/NavigateTo.png)
 
 ## <a name = Nonfunctional_Reqs></a> Nonfunctional Requirements ##
+**REQ-7:** System can provide user with data demonstrating expected flow derived from date, time, and lot.
+
+**REQ-8:** System can lookup user schedule and suggest parking lots that are available and prioritize based on destination.
 
 ## <a name = Domain_Analysis></a> Domain Analysis ##
 
 ### <a name = domain_model></a> Domain Model ###
 
-In the works...
-
+![image](diagrams/domain-model.png)
 ### <a name = op_contacts></a> System Operation Contacts ###
 
 ### <a name = math_model></a> Mathematical Model ###
+
+## <a name = User_Interface_Design></a> User Interface Design ##
+
+### <a name = preliminary_design> </a> Preliminary Design ###
+
+### <a name = User_effort_estimate></a> User Effort Estimation ###
+
+**1) Select User Type:** total 2 clicks, as follows
+	
+	-Tap on user type (staff, student, parking enforcement)
+	-Tap "Enter" 
+**2) Set Up Current Location:** total 1 click, as follows
+
+	-Tap "enable" to allow access to user's current location
+**3) Select Lot:** total 2 clicks, as follows
+
+	-Tap "search for lot"
+	-Select lot by tapping on lots displayed on screen
+**4) Select Parking Space:** total 2 clicks, as follows
+
+	-Browse lot for vacant spaces, tap on available space
+	-Tap "navigate" when prompted, to navigate to selected space
