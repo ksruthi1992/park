@@ -478,15 +478,15 @@ The following people are the one's who might benefit and get involved with the a
 				2. User must have GPS turned on	
    -------------------------------------------------------------------------------------------------------------------------------
      Navigate To Lot	1. User must have GPS turned on				1. User is guided, step-by-step, towards a parking spot.
-     				2. A parking spot must be available
-				3. A certain spot must be selected
+     			2. A parking spot must be available
+			3. A certain spot must be selected
    -------------------------------------------------------------------------------------------------------------------------------
-     Get Past Data	1. Mobile app installed to access the database 		1. User is given all data information derived from previous days
+     Get Past Data		1. Mobile app installed to access the database	 		1. User is given all data information derived from previous days
    --------------------------------------------------------------------------------------------------------------------------------
      Scheduler		1. User must have GPS turned on				1. App will suggest a certain schedule destination based on their weekly calendar
      			2. Internet connection to access database
    --------------------------------------------------------------------------------------------------------------------------------
-     Suggest Lots	1. User must have GPS turned on			1. App suggests parking lots that are available to park
+     Suggest Lots		1. User must have GPS turned on					1. App suggests parking lots that are available to park
      			2. Internet connection to access database,
    --------------------------------------------------------------------------------------------------------------------------------
      Ticket Violations	1. Enforcer must have all the equipments needed 	1. Ticket will be placed in a vehicle if it violated a rule
