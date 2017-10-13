@@ -19,7 +19,7 @@ import java.io.IOException;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-    private int percentLotFull = 50;
+    private int percentLotFull = 10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,15 +71,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private int setLotColor(int percentFull) {
         if(100-percentFull< 20) {
-            return R.raw.sac_state_parking_empty;
+            return R.raw.sac_state_parking_full;
         } else if (100-percentFull < 40) {
-            return R.raw.sac_state_parking_quarter;
+            return R.raw.sac_state_parking_three_quarter;
         } else if (100-percentFull < 60) {
             return R.raw.sac_state_parking_half;
         } else if (100-percentFull < 80) {
-            return R.raw.sac_state_parking_three_quarter;
+            return R.raw.sac_state_parking_quarter;
         } else {
-            return R.raw.sac_state_parking_full;
+            return R.raw.sac_state_parking_empty;
         }
     }
 }
