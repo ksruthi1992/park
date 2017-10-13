@@ -50,7 +50,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sacState, 15));
 
         try {
-            KmlLayer lot7 = new KmlLayer(mMap, R.raw.sac_state_parking, getApplicationContext());
+            KmlLayer lot7 = new KmlLayer(mMap, R.raw.sac_state_parking_full, getApplicationContext());
             lot7.addLayerToMap();
             lot7.setOnFeatureClickListener(new KmlLayer.OnFeatureClickListener() {
                 @Override
