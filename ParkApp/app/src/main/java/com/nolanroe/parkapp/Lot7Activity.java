@@ -9,11 +9,6 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.maps.android.data.kml.KmlLayer;
-
-import org.xmlpull.v1.XmlPullParserException;
-
-import java.io.IOException;
 
 /**
  * Created by Danolanater on 10/2/2017.
@@ -40,16 +35,5 @@ public class Lot7Activity extends AppCompatActivity implements OnMapReadyCallbac
         LatLng sacState = new LatLng(38.5553711, -121.4209975);
         // mMap.addMarker(new MarkerOptions().position(sacState).title("Sac State"));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sacState, 18));
-
-        try {
-            KmlLayer lot7 = new KmlLayer(mMap, R.raw.sac_state_parking, getApplicationContext());
-            lot7.addLayerToMap();
-        }
-        catch (IOException ex) {
-            ex.printStackTrace();
-        }
-        catch (XmlPullParserException x) {
-            x.printStackTrace();
-        }
     }
 }
