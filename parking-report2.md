@@ -31,15 +31,15 @@
 
 - *[Algorithms](#Algorithms)*
 
-- *[Data Structures](#Data Structures)*
+- *[Data Structures](#Data_Structures)*
 
 **[User Interface Design and Implementation](#User_Interface_Design)**
 
 **[Progress Report and Plan of Work](#Progress_Report)**
 
-- *[Progress Report](#Progress Report)*
+- *[Progress Report](#Progress_Report)*
 
-- *[Plan of Work](#Plan of Work)*
+- *[Plan of Work](#Plan_of_Work)*
 
 - *[Breakdown of Responsibilities](#Breakdown_of_Responsibilities)*
 
