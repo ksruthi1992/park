@@ -27,7 +27,7 @@
 
 - *[Global Control Flow ](#Global_Control_Flow)*
 	
-**Algorithms and Data Structures(#Algorithms_and_Data_Structures)**
+**[Algorithms and Data Structures](#Algorithms_and_Data_Structures)**
 
 - *[Algorithms](#Algorithms)*
 
