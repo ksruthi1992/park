@@ -78,7 +78,7 @@
 ### <a name = "Algorithms"></a>Algorithms ###
 ..
 
-### <a name = "Data_Structures"></a>Data Structures###
+### <a name = "Data_Structures"></a>Data Structures ###
 ..
 
 ## <a name = "User_Interface_Design"></a>User Interface Design and Implementation ##
@@ -89,7 +89,7 @@
 ### <a name = "Progress_Report"></a>Progress Report ###
 ..
 
-### <a name = "Plan_of_Work"></a>Plan of Work###
+### <a name = "Plan_of_Work"></a>Plan of Work ###
 ..
 
 ### <a name = "Breakdown_of_Responsibilities"></a>Breakdown of Responsibilities ###
