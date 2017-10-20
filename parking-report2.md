@@ -96,7 +96,75 @@ The key difference between ParkMe Close and ParkMe Valet is that the driver can 
 ## <a name = "Class_Diagrams"></a>Class Diagrams and Interaction Specifications ##
 
 ### <a name = "Class_Diagrams"></a>Class Diagram ###
-..
+
+**LocationService Class**
+
+GetMobileLocation()
+
+**Navigator Class**
+
+Properties
+- driverMode: int
+- driverDestination: {decimal(3,N), decimal(3,N)}
+- currentGeoCode: {decimal(3,N), decimal(3,N)}
+- lastGeoCode: {decimal(3,N), decimal(3,N)}
+- destGeoCode: {decimal(3,N), decimal(3,N)}
+
+Methods
+- TrackProgress()
+- SetRoute()
+- HandOffRoute()
+
+**SpaceFinder Class**
+- driverDestination
+
+
+Methods
+- FindBestLot()
+- FindCandidateSpaceList()
+
+
+**Design Patterns**
+
+Observable
+- Database Calls via Http
+- CandidateSpaceList to be notified when space availability state changes
+
+
+**DbAccess**
+
+Methods
+- getLotsDb()
+- postLotDb()
+- putLotDb()
+- deleteLotDb()
+
+
+**LotsService**
+
+ILot, ISpace
+
+Methods
+- GetLots(driverMode: int)
+- AddLot()
+- UpdateLot()
+- DeleteLot()
+- 
+- GetSpaces(state: string)
+- AddSpace()
+- UpdateSpace()
+- DeleteLot()
+
+
+**Admin Class**
+
+Methods
+- ListLots()
+- ListSpacesInLot()
+- UploadLot()
+- SuspendLot()
+- SuspendSpace()
+
 
 ### <a name = data_types></a>Data Types and Operation Signatures ###
 ..
