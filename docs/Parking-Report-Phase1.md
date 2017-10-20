@@ -93,10 +93,6 @@ The following people are the one's who might benefit and get involved with the a
 
 * A Driver can be a university student, faculty member, or campus staff. Drivers are the primary consumers of the system. A Driver's goal is to find the nearest available parking space based on their approach to campus or destination on campus.
 
-**Enforcer** Initiating Actor
-
-* An Enforcer is an employee of the campus parking enforcement team. Enforcers are the primary providers of the system. An Enforcer's goal is to help manage the flow of traffic and campus and help Drivers get to their locations as quickly and easily as possible.
-
 **Sensor** Participating Actor
 
 * A Sensor provides the self-report technology the system relies on to determine the occupancy status of an individual space in a parking lot. The Sensor provides real-time status updates of either occupied or vacant.

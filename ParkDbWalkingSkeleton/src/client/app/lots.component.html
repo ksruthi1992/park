@@ -1,0 +1,39 @@
+<div>
+    <ul class="lots">
+      <li *ngFor="let lot of lotCollection" (click)="onSelect(lot)" [class.selected]="lot === selectedLot">
+        <button class="delete-button" (click)="deleteLot(lot)">Delete</button>
+        <div class="lot-element">
+          <div class="lotId">{{lot.lotId}}</div>
+          <div class="lotName">{{lot.lotName}} - {{lot.lotLocation}}</div>
+          <div class="lotVacancy">{{lot.lotVacancy}} spaces available</div>
+        </div>
+      </li>
+    </ul>
+    <div class="editarea">
+      <button (click)="enableEditMode()">Add New Lot</button>
+      <div *ngIf="currentLot">
+        <div class="editfields">
+          <div>
+            <label>id: </label>
+            <input [(ngModel)]="currentLot.lotId" placeholder="lotId" *ngIf="editMode" />
+            <label *ngIf="!editMode" class="value">{{currentLot.lotId}}</label>
+          </div>
+          <div>
+            <label>name: </label>
+            <input [(ngModel)]="currentLot.lotName" placeholder="lotName" />
+          </div>
+          <div>
+            <label>location: </label>
+            <input [(ngModel)]="currentLot.lotLocation" placeholder="location" />
+          </div>
+          <div>
+            <label>Vacancy: </label>
+            <input [(ngModel)]="currentLot.lotVacancy" placeholder="lotVacancy" />
+          </div>
+        </div>
+        <button (click)="cancelEditMode()">Cancel</button>
+        <button (click)="saveLot()">Save</button>
+      </div>
+    </div>
+  </div>
+  

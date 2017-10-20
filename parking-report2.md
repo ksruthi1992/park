@@ -7,7 +7,9 @@
 
 **[Table of Contents](#Table_of_Contents)**
 
-**[Class Diagrams and Interaction Specifications](#Class_Diagrams)**
+**[Interaction Diagrams](#Interaction_Diagrams)**
+
+**[Class Diagrams](#Class_Diagrams)**
 
 - *[Class Diagram](#class_diagram)*
 
@@ -45,6 +47,52 @@
 
 **[References](#References)**
 
+## <a name = "Interaction_Diagrams"></a>Primary Use Cases & Interaction Diagrams ##
+Minimal user interactions clearly differentiate the ParkMe app from other solutions. In fact, the app is so easy to user that a driver can simply start the solution and be routed to an available parking space, hands free. For the driver who wants to find a parking space close to a specific building on campus, the only choice required is to select the building and then ParkMe handles the rest.
+
+The following high level use cases and interactions illustrate how simple it is to use ParkMe.
+
+
+###Use Case Actors###
+
+**Driver** (Initiating Actor)
+
+* A Driver can be a university student, faculty member, or campus staff. Drivers are the primary consumers of the system. A Driver's goal is to find the nearest available parking space based on their approach to campus or destination on campus.
+
+**Sensor** (Participating Actor)
+
+* A Sensor provides the self-report technology the system relies on to determine the occupancy status of an individual space in a parking lot. The Sensor provides real-time status updates of either occupied or vacant.
+
+**Navigator** (Participating Actor)
+
+* The Navigator guides a driver to a vacant parking spot. The Navigator provides several important services: first, it tracks the current location of a driver; second, it provides a route to a parking lot; third, it provide audio directions to the driver. 
+
+**SpaceFinder** (Participating Actor)
+
+* The SpaceFinder provides the system with real-time tabulation of the total number of vacant spaces in each parking lot on campus, and locates the best parking lot and available space.
+
+###Use Case 1 - ParkMe Valet###
+
+ParkMe Valet automatically routes the driver to the best parking space. The driver simply starts the app and relies on driving instructions provided by the Navigator. 
+
+<img src="./diagrams/Report2_UcAutoParkMe.png"/>
+
+Utilizing the location service provided by a mobile device, ParkMe tracks the driver's progress toward campus, and when s/he is close to campus ParkMe checks with the SpaceFinder to find the closest parking lot with the highest availability. Once the driver enters the parking lot the Navigator requests the geo coordinates for and available space and automatically routes them to spot. 
+
+<img src="./diagrams/Report2_UcAutoParkMeInteraction.png"/>
+
+###Use Case 2 - ParkMe Near###
+
+ParkMe close to my destination lets the driver select a building on campus so that it can prioritize parking lots in its vicinity. 
+
+<img src="./diagrams/Report2_UcAutoParkMe.png"/>
+
+The key difference between ParkMe Close and ParkMe Valet is that the driver can have the system prioritize parking lots close to his/her destination.
+
+<img src="./diagrams/Report2_UcAutoParkMeInteraction.png"/>
+
+
+
 ## <a name = "Class_Diagrams"></a>Class Diagrams and Interaction Specifications ##
 
 ### <a name = "Class_Diagrams"></a>Class Diagram ###
@@ -56,7 +104,10 @@
 ## <a name = "System_Architecture"></a>System Architecture and System Design ##
 
 ### <a name = "Architectural_Styles"></a>Architectural Styles  ###
-..
+
+**Client/Server**
+1. Centralized database
+2. URL based REST API
 
 ### <a name = "Identifying_Subsystems"></a>Identifying Subsystems ###
 ..
@@ -93,7 +144,13 @@
 ..
 
 ### <a name = "Breakdown_of_Responsibilities"></a>Breakdown of Responsibilities ###
-..
+
+**Robert Fuller**
+
+1. Database and REST API
+2. Web Server
+3. Web App
+4. Web Admin
 
 ## <a name = "References"></a>References ##
 ..
