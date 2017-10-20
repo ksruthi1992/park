@@ -97,11 +97,17 @@ The key difference between ParkMe Close and ParkMe Valet is that the driver can 
 
 ### <a name = "Class_Diagrams"></a>Class Diagram ###
 
+
+Please note: the outline below was just to get the discussion started during our 10/20/2017 meeting. The leads for each section are identified below. Please do not consider this to be accurate or complete, just delete the text and post your diagrams as you get them done.
+
+
 **LocationService Class**
 
 GetMobileLocation()
 
 **Navigator Class**
+
+(Diagrams: Cecilia)
 
 Properties
 - driverMode: int
@@ -116,6 +122,9 @@ Methods
 - HandOffRoute()
 
 **SpaceFinder Class**
+
+(Diagrams: Hugo)
+
 - driverDestination
 
 
@@ -128,10 +137,12 @@ Methods
 
 Observable
 - Database Calls via Http
-- CandidateSpaceList to be notified when space availability state changes
+- CandidateSpaceLislst to be notified when space availability state changes
 
 
 **DbAccess**
+
+(Diagrams: Robert)
 
 Methods
 - getLotsDb()
@@ -158,6 +169,8 @@ Methods
 
 **Admin Class**
 
+(Diagrams: Robert)
+
 Methods
 - ListLots()
 - ListSpacesInLot()
@@ -178,16 +191,19 @@ Methods
 2. URL based REST API
 
 ### <a name = "Identifying_Subsystems"></a>Identifying Subsystems ###
-..
+
+(Diagrams: Adrian)
 
 ### <a name = "Mapping_Subsystems"></a>Mapping Subsystems to Hardware ###
-..
+
+(Diagrams: Adrian)
 
 ### <a name = "Persistent_Data_Storage"></a>Persistent Data Storage ###
 ..
 
 ### <a name = "Network_Protocol"></a>Network Protocol ###
-..
+
+- Http used for access to database through REST API
 
 ### <a name = "Global_Control_Flow"></a>Global Control Flow  ###
 ..
@@ -201,7 +217,24 @@ Methods
 ..
 
 ## <a name = "User_Interface_Design"></a>User Interface Design and Implementation ##
-..
+
+Simplicity is what distinguishes the ParkMe app for other solutions. Thus, the user interface is minimal since our objective is a hands-free experience for the driver once they are enroute and unless the administrator needs to upload a new park definition or suspend access to a parking space the Sensor is self-reporting so maintenance is minimal.
+
+However, we do have some simple user interfaces that can be accessed as shown below:
+
+TO DO:
+1) Driver selects mode: ParkMe Valet or ParkMeNear
+2) Driver enables location service
+3) Admin can do the following: i) define lot, ii) Upload lot, iii) Suspend lot/space, etc.
+
+Outstanding considerations:
+1) How does Raspberry PI communicate with CosmosDB (e.g., IoT protocol)?
+2) How do we handoff to Google Maps app (e.g., can we start the GoogleMaps app from our Android app and pass it either GeoCodes or a Route and then call Start Route so that we have a hands free scenario for audio)?
+
+
+Future considerations:
+1) Can we initiate by voice using Google on Android (e.g., "Google, start ParkMe Valet")?
+ 
 
 ## <a name = "Progress_Report"></a>Progress Report and Plan of Work ##
 
