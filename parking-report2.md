@@ -198,7 +198,8 @@ Add the following image as a reference point to build Subsystems diagram.
 - Http used for access to database through REST API
 
 ### <a name = "Global_Control_Flow"></a>Global Control Flow  ###
-..
+
+Our system will be based on Time-Dependency, the sensors will check the parking spot status on real-time and it will update the database every few seconds, and the results will be sent to the mobile app if it's ready to be routed.
 
 ## <a name = "Algorithms_and_Data_Structures"></a>Algorithms and Data Structures ##
 
