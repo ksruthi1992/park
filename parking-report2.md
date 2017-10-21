@@ -140,31 +140,19 @@ Observable
 - CandidateSpaceLislst to be notified when space availability state changes
 
 
+**REST API**
+
+(Diagrams: Robert)
+
+The REST API relies on deep linking to build the necessary routes. The RouterAPI class dynamically builds new routes based on the current folder structure to simplify future expansion.
+
+<img src="./diagrams/ClassDiagramRestAPI.png"/>
+
 **DbAccess**
 
 (Diagrams: Robert)
 
-Methods
-- getLotsDb()
-- postLotDb()
-- putLotDb()
-- deleteLotDb()
-
-
-**LotsService**
-
-ILot, ISpace
-
-Methods
-- GetLots(driverMode: int)
-- AddLot()
-- UpdateLot()
-- DeleteLot()
-- 
-- GetSpaces(state: string)
-- AddSpace()
-- UpdateSpace()
-- DeleteLot()
+<img src="./diagrams/ClassDiagramDb.png"/>
 
 
 **Admin Class**
@@ -193,6 +181,10 @@ Methods
 ### <a name = "Identifying_Subsystems"></a>Identifying Subsystems ###
 
 (Diagrams: Adrian)
+
+Add the following image as a reference point to build Subsystems diagram.
+
+<img src="./diagrams/TechnologyStackHighLevel.png"/>
 
 ### <a name = "Mapping_Subsystems"></a>Mapping Subsystems to Hardware ###
 
