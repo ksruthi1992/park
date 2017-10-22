@@ -7,7 +7,9 @@
 
 **[Table of Contents](#Table_of_Contents)**
 
-**[Interaction Diagrams](#Interaction_Diagrams)**
+**[Introduction](#Introduction)**
+
+**[Primary Use Cases & Interaction Diagrams](#Interaction_Diagrams)**
 
 **[Class Diagrams](#Class_Diagrams)**
 
@@ -46,6 +48,15 @@
 - *[Breakdown of Responsibilities](#Breakdown_of_Responsibilities)*
 
 **[References](#References)**
+
+##<a name="Introduction"></a>Introduction##
+During the course of the semester, the Pink Unicorns team has continued to refine its ParkMe solution. Significantly, we have identified the primary product differentiation, namely, that ParkMe minimizes interactions required from both the administrative and usage perspectives. In other words, ParkMe provides an automated parking solution.
+
+From the driver perspective, our goal is to provide a hands free option for finding a parking space, from driver initiation to parking on campus. We will leverage location tracking and routing utilizing mobile device based technologies for audio interactions and available mapping technologies. This type of solution is in sharp contrast to other solutions, such as the one made available by Sac State, which require to user to scan a map to find out where to go.
+
+From the administrator perspective, we offer a self-reporting solution that can be placed in each parking space and can provide near real-time updates about the availability of each parking space in campus. This will enable us to both direct a driver to the best candidate parking lot at any time during the day and then route them to a vacant parking space. By comparison, the current Sac State map solution is based on the best guess of the administrator which is periodically submitted during the day.
+
+The refinement of our solution has allowed us to focus on the key use cases which differentiate our product, and we have included the primary driver use cases below to illustrate how easy it is for drivers to use our application.
 
 ## <a name = "Interaction_Diagrams"></a>Primary Use Cases & Interaction Diagrams ##
 Minimal user interactions clearly differentiate the ParkMe app from other solutions. In fact, the app is so easy to user that a driver can simply start the solution and be routed to an available parking space, hands free. For the driver who wants to find a parking space close to a specific building on campus, the only choice required is to select the building and then ParkMe handles the rest.
