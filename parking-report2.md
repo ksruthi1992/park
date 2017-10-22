@@ -109,17 +109,9 @@ GetMobileLocation()
 
 (Diagrams: Cecilia)
 
-Properties
-- driverMode: int
-- driverDestination: {decimal(3,N), decimal(3,N)}
-- currentGeoCode: {decimal(3,N), decimal(3,N)}
-- lastGeoCode: {decimal(3,N), decimal(3,N)}
-- destGeoCode: {decimal(3,N), decimal(3,N)}
+The Navigator class uses the users current Geo-location coordinates and the destination coordinates to setup a route. Once a route has been found the Google Maps Directions API will take over.
 
-Methods
-- TrackProgress()
-- SetRoute()
-- HandOffRoute()
+<img src="./diagrams/Class_Navigator.png"/>
 
 **SpaceFinder Class**
 
