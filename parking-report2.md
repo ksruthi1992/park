@@ -168,28 +168,28 @@ The Web DriverPark classes are used by a driver to accomplish the following task
 
 ### <a name = "Identifying_Subsystems"></a>Identifying Subsystems ###
 
-(Diagrams: Adrian)
+Everything will start on the sensor checking if a spot is available, then it will send the information to the database. The database comprises a subsystem that includes the components of parkings lots, spaces, and destination. The server then will communicate through the mobile app, which includes it's subsystem on services such as get lots, spaces, and destination.
 
-Added the following image as a reference point to build Subsystems diagram.
+The image below provides a high level overview of the system components:
+
+<img src="./diagrams/SystemHighLevelOverview.png"/>
+
+The image below identifies the subsystems:
 
 <img src="./diagrams/IdentifyingSubsystem.png"/>
 
-Everything will start on the sensor checking if a spot is available, then it will send the information to the database. The database comprises a subsystem that includes the components of parkings lots, spaces, and destination. The server then will communicate through the mobile app, which includes it's subsystem on services such as get lots, spaces, and destination.
-
-<img src="./diagrams/TechnologyStackHighLevel.png"/>
 
 ### <a name = "Mapping_Subsystems"></a>Mapping Subsystems to Hardware ###
-
-(Diagrams: Adrian) //I dont think we need a diagram here.
 
 Outline of subsystems to hardware:
 
 - Space Sensor: Ultrasonic Sensor HC-SR04
 - Space Report: Raspberry Pi
 - ParkMe Database: Azure Cosmos DB "dbName=parkdbcsus"
-- Web App and REST API: Azure virtual machine
-- Navigator Routing: Google Maps
-- Mobile App: Android mobile device
+- REST API: Azure virtual machine
+- Web Admin Site: Azure virtual machine
+- Web Driver Site: Azure virtual machine
+- Mobile Driver App: Android mobile device
 
 ### <a name = "Persistent_Data_Storage"></a>Persistent Data Storage ###
 
