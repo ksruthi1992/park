@@ -193,12 +193,54 @@ Added the following image as a reference point to build Subsystems diagram.
 
 (Diagrams: Adrian)
 
+Outline of subsystems to hardware:
+
+- Space Sensor: Ultrasonic Sensor HC-SR04
+- Space Report: Raspberry Pi
+- ParkMe Database: Azure Cosmos DB "dbName=parkdbcsus"
+- Web App and REST API: Azure virtual machine
+- Navigator Routing: Google Maps
+- Mobile App: Android mobile device
+
 ### <a name = "Persistent_Data_Storage"></a>Persistent Data Storage ###
-..
+
+A repository of the parking lots will be managed in an Azure Cosmos DB. The following data schema will be used to store JSON objects.
+
+** Parking Lot **
+
+{
+"lotId" : "number",
+"lotState" : "string",
+"lotType" : "string",
+"lotVacancy" : "number",
+"lotGeoCode" : "string",
+"lotDescription" : "string"
+}
+
+** Parking Space **
+
+{
+"spaceId" : "number",
+"spaceState" : "string",
+"spaceReserved" : "boolean",
+"spaceGeoCode" : "string"
+}
+
+** Destination **
+
+{
+"destinationId" : "number",
+"destinationTitle" : "string",
+"destinationDescription" : "string"
+}
 
 ### <a name = "Network_Protocol"></a>Network Protocol ###
 
-- Http used for access to database through REST API
+The following network protocols are used:
+
+- ParkMe Database REST API: Http 
+- ParkMe Web App: Http
+- Space Report: IoT
 
 ### <a name = "Global_Control_Flow"></a>Global Control Flow  ###
 
