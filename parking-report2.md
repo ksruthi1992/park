@@ -49,7 +49,7 @@
 
 **[References](#References)**
 
-##<a name="Introduction"></a>Introduction##
+## <a name=" Introduction "></a>Introduction ##
 During the course of the semester, the Pink Unicorns team has continued to refine its ParkMe solution. Significantly, we have identified the primary product differentiation, namely, that ParkMe minimizes interactions required from both the administrative and usage perspectives. In other words, ParkMe provides an automated parking solution.
 
 From the driver perspective, our goal is to provide a hands free option for finding a parking space, from driver initiation to parking on campus. We will leverage location tracking and routing utilizing mobile device based technologies for audio interactions and available mapping technologies. This type of solution is in sharp contrast to other solutions, such as the one made available by Sac State, which require to user to scan a map to find out where to go.
@@ -64,7 +64,7 @@ Minimal user interactions clearly differentiate the ParkMe app from other soluti
 The following high level use cases and interactions illustrate how simple it is to use ParkMe.
 
 
-###Use Case Actors###
+### Use Case Actors ###
 
 **Driver** (Initiating Actor)
 
