@@ -146,15 +146,9 @@ The Web and Android apps will be accessing the REST API through HTTP protocols s
 
 **WebAdmin Class Diagrams**
 
-(Diagrams: Robert)
+The WebAdmin classes are used by the system administrator to manage the parking lots with related parking spaces as well as the on campus destinations a driver can choose from in the ParkMe Near mode.
 
-Methods
-- ListLots()
-- ListSpacesInLot()
-- UploadLot()
-- SuspendLot()
-- SuspendSpace()
-
+<img src="./diagrams/ClassDiagramWebAdmin.png"/>
 
 **Web DriverPark Class Diagrams**
 
