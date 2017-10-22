@@ -107,58 +107,44 @@ The key difference between ParkMe Close and ParkMe Valet is that the driver can 
 ## <a name = "Class_Diagrams"></a>Class Diagrams and Interaction Specifications ##
 
 ### <a name = "Class_Diagrams"></a>Class Diagram ###
+The diagrams below provide an overview of the key classes used in our system.
 
 
-Please note: the outline below was just to get the discussion started during our 10/20/2017 meeting. The leads for each section are identified below. Please do not consider this to be accurate or complete, just delete the text and post your diagrams as you get them done.
-
-
-**LocationService Class**
-
-GetMobileLocation()
-
-**Navigator Class**
-
-(Diagrams: Cecilia)
+**Navigator Class Diagrams**
 
 The Navigator class uses the users current Geo-location coordinates and the destination coordinates to setup a route. Once a route has been found the Google Maps Directions API will take over.
 
 <img src="./diagrams/Class_Navigator.png"/>
 
-**SpaceFinder Class**
+**SpaceFinder Class Diagrams**
 
 (Diagrams: Hugo)
 
-- driverDestination
-
+- driverDestination // Used in the ParkMe Near use case
 
 Methods
-- FindBestLot()
-- FindCandidateSpaceList()
+
+- FindBestLot( pDriverDestination : destinationId = NULL )
+- FindCandidateSpaceList( pLot : lotId )
+- ReserveSpace( pSpace : spaceId )
 
 
-**Design Patterns**
-
-Observable
-- Database Calls via Http
-- CandidateSpaceLislst to be notified when space availability state changes
-
-
-**REST API**
-
-(Diagrams: Robert)
+**REST API Class Diagrams**
 
 The REST API relies on deep linking to build the necessary routes. The RouterAPI class dynamically builds new routes based on the current folder structure to simplify future expansion.
 
 <img src="./diagrams/ClassDiagramRestAPI.png"/>
 
-**DbAccess**
+**DbAccess Class Diagrams**
 
-(Diagrams: Robert)
+The DbAccess classes support basic CRUD operations for the parkdbcsus Cosmos DB database. In addition, some helper methods have been defined for key operations, such 
+
+The Web and Android apps will be accessing the REST API through HTTP protocols since the database is hosted on the Azure Cloud.
 
 <img src="./diagrams/ClassDiagramDb.png"/>
 
 
-**Admin Class**
+**WebAdmin Class Diagrams**
 
 (Diagrams: Robert)
 
@@ -169,6 +155,8 @@ Methods
 - SuspendLot()
 - SuspendSpace()
 
+
+**Web DriverPark Class Diagrams**
 
 ### <a name = data_types></a>Data Types and Operation Signatures ###
 ..
@@ -253,7 +241,12 @@ Our system will be based on Time-Dependency, the sensors will check the parking 
 ## <a name = "Algorithms_and_Data_Structures"></a>Algorithms and Data Structures ##
 
 ### <a name = "Algorithms"></a>Algorithms ###
-..
+
+**Design Patterns**
+
+Observable
+- Database Calls via Http
+- CandidateSpaceLislst to be notified when space availability state changes
 
 ### <a name = "Data_Structures"></a>Data Structures ###
 ..
