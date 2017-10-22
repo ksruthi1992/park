@@ -250,23 +250,17 @@ Observable
 
 ## <a name = "User_Interface_Design"></a>User Interface Design and Implementation ##
 
-Simplicity is what distinguishes the ParkMe app for other solutions. Thus, the user interface is minimal since our objective is a hands-free experience for the driver once they are enroute and unless the administrator needs to upload a new park definition or suspend access to a parking space the Sensor is self-reporting so maintenance is minimal.
+Simplicity is what distinguishes the ParkMe app for other solutions. Thus, the user interface is minimal since our objective is a hands-free experience for the driver once they are enroute and unless the administrator needs to upload a new park definition or suspend access to a parking space the Sensor is self-reporting so maintenance is minimal. However, we do have some simple user interfaces that can be accessed as shown below:
 
-However, we do have some simple user interfaces that can be accessed as shown below:
+**Driver User Interface**
 
-TO DO:
+<img src="./diagrams/UiDriverSnapshots.png"/>
 
-1. Driver selects mode: ParkMe Valet or ParkMeNear
-2. Driver enables location service
-3. Admin can do the following: i) define lot, ii) Upload lot, iii) Suspend lot/space, etc.
+**Administration User Interface**
 
-Outstanding considerations:
+To Do
 
-1. How does Raspberry PI communicate with CosmosDB (e.g., IoT protocol)?
-2. How do we handoff to Google Maps app (e.g., can we start the GoogleMaps app from our Android app and pass it either GeoCodes or a Route and then call Start Route so that we have a hands free scenario for audio)?
-
-
-Future considerations:
+**Future considerations**
 
 1. Can we initiate by voice using Google on Android (e.g., "Google, start ParkMe Valet")?
  
