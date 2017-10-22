@@ -162,17 +162,23 @@ The Web DriverPark classes are used by a driver to accomplish the following task
 
 ### <a name = "Architectural_Styles"></a>Architectural Styles  ###
 
+The ParkMe solution is built upon a client/server architecture and consists of three-tiers. Clients include the following: Web-based Administration and Driver sites; Android mobile app; Sensor Controllers.
+
 **Client/Server**
-1. Centralized database
-2. URL based REST API
+
+1. Cloud database
+2. Web Server: URL based REST API
+3. Web-based Administration and Driver sites; Android-based mobile Driver app
+
+The image below provides a high level overview of the system architecture:
+
+<img src="./diagrams/SystemHighLevelOverview.png"/>
+
 
 ### <a name = "Identifying_Subsystems"></a>Identifying Subsystems ###
 
 Everything will start on the sensor checking if a spot is available, then it will send the information to the database. The database comprises a subsystem that includes the components of parkings lots, spaces, and destination. The server then will communicate through the mobile app, which includes it's subsystem on services such as get lots, spaces, and destination.
 
-The image below provides a high level overview of the system components:
-
-<img src="./diagrams/SystemHighLevelOverview.png"/>
 
 The image below identifies the subsystems:
 
@@ -195,7 +201,7 @@ Outline of subsystems to hardware:
 
 A repository of the parking lots will be managed in an Azure Cosmos DB. The following data schema will be used to store JSON objects.
 
-** Parking Lot **
+**Parking Lot Schema**
 
 {
 "lotId" : "number",
@@ -206,7 +212,7 @@ A repository of the parking lots will be managed in an Azure Cosmos DB. The foll
 "lotDescription" : "string"
 }
 
-** Parking Space **
+**Parking Space Schema**
 
 {
 "spaceId" : "number",
@@ -215,7 +221,7 @@ A repository of the parking lots will be managed in an Azure Cosmos DB. The foll
 "spaceGeoCode" : "string"
 }
 
-** Destination **
+**Destination Schema**
 
 {
 "destinationId" : "number",
@@ -227,8 +233,8 @@ A repository of the parking lots will be managed in an Azure Cosmos DB. The foll
 
 The following network protocols are used:
 
-- ParkMe Database REST API: Http 
-- ParkMe Web App: Http
+- ParkMe Database REST API: HTTP 
+- ParkMe Web App: HTTP
 - Space Report: IoT
 
 ### <a name = "Global_Control_Flow"></a>Global Control Flow  ###
@@ -242,8 +248,9 @@ Our system will be based on Time-Dependency, the sensors will check the parking 
 **Design Patterns**
 
 Observable
-- Database Calls via Http
-- CandidateSpaceLislst to be notified when space availability state changes
+
+- Database calls via HTTP
+- CandidateSpaceList collection to be notified when space availability changes
 
 ### <a name = "Data_Structures"></a>Data Structures ###
 ..
