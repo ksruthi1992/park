@@ -185,7 +185,7 @@ Methods
 
 (Diagrams: Adrian)
 
-Add the following image as a reference point to build Subsystems diagram.
+Added the following image as a reference point to build Subsystems diagram.
 
 <img src="./diagrams/TechnologyStackHighLevel.png"/>
 
@@ -219,23 +219,52 @@ Simplicity is what distinguishes the ParkMe app for other solutions. Thus, the u
 However, we do have some simple user interfaces that can be accessed as shown below:
 
 TO DO:
-1) Driver selects mode: ParkMe Valet or ParkMeNear
-2) Driver enables location service
-3) Admin can do the following: i) define lot, ii) Upload lot, iii) Suspend lot/space, etc.
+
+1. Driver selects mode: ParkMe Valet or ParkMeNear
+2. Driver enables location service
+3. Admin can do the following: i) define lot, ii) Upload lot, iii) Suspend lot/space, etc.
 
 Outstanding considerations:
-1) How does Raspberry PI communicate with CosmosDB (e.g., IoT protocol)?
-2) How do we handoff to Google Maps app (e.g., can we start the GoogleMaps app from our Android app and pass it either GeoCodes or a Route and then call Start Route so that we have a hands free scenario for audio)?
+
+1. How does Raspberry PI communicate with CosmosDB (e.g., IoT protocol)?
+2. How do we handoff to Google Maps app (e.g., can we start the GoogleMaps app from our Android app and pass it either GeoCodes or a Route and then call Start Route so that we have a hands free scenario for audio)?
 
 
 Future considerations:
-1) Can we initiate by voice using Google on Android (e.g., "Google, start ParkMe Valet")?
+
+1. Can we initiate by voice using Google on Android (e.g., "Google, start ParkMe Valet")?
  
 
 ## <a name = "Progress_Report"></a>Progress Report and Plan of Work ##
 
 ### <a name = "Progress_Report"></a>Progress Report ###
-..
+
+The Pink Unicorns have made significant progress during the course of the semester. Starting with the basic idea to develop a solution to streamline parking on university campuses, we have iterated through the ideation process to develop an approach which leverages technology that can minimize interactions and is largely self-supporting. This is significant since our primary users will be driving while using our application and campus administrators are faced with the daunting challenge of providing real time information about the availability of parking in large lots scattered across sprawling campuses.
+
+During our due diligence, we contacted the Sac State parking enforcement and discovered that the current approach for providing parking availability is based on a best guess algorithm where an administrator estimates the percentage of parking spaces available for each lot and periodically posts these guesses. Drivers can then access these best guesses, which may not even be timely, but they are only provided with a high level map that is poorly labelled and requires scrolling to see different sections of the campus. Imagine trying to use this interface while driving.
+
+Two fundamental challenges were faced by our team during the design process:
+
+1. How can we get a real-time report for the status of each parking space on campus (literally thousands of spaces)?
+2. How can we help our user find the best available parking space at any giving time during the day?
+
+Fortunately, with a bit of inspiration and the aid of technology we were able to develop a solution architecture that addressed both of these challenges. To track real-time parking availability across lots, a self-reporting sensor can be placed in each parking space and coupled with strategically located Raspberry Pi computers to report the availability of each space throughout the course of the day to a cloud-based database. This information can then be accessed through mobile devices where we tap into location services to track progress of the driver as s/he heads to campus and rely on Google Maps to narrate the route to the best parking space.  
+
+Once we had the approach defined, we were able to begin evaluation of the necessary technology components and how to wire them together. To date, we have been able to identify how to implement the end-to-end solution using:
+
+- Sensors - Ultrasonic sensor HC-SR04
+- Sensor self-report - Raspberry Pi computers
+- Cloud-based database - Azure Cosmos DB
+- Cloud-based web server - Azure virtual machine
+- Web app - REST API, Admin console and alternative driver app
+- Android app - premium driver app
+
+We have also started the development process, including:
+
+- initial development of android app
+- walking skeleton for Web to database of angular app
+
+In addition, we have implemented a slack channel for team collaboration and held periodic on campus meetings for ideation and planning.
 
 ### <a name = "Plan_of_Work"></a>Plan of Work ###
 ..
