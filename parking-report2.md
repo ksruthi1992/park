@@ -135,7 +135,7 @@ The REST API relies on deep linking to build the necessary routes. The RouterAPI
 
 <img src="./diagrams/ClassDiagramRestAPI.png"/>
 
-**DbAccess Class Diagrams**
+**Db Access Class Diagrams**
 
 The DbAccess classes support basic CRUD operations for the parkdbcsus Cosmos DB database. In addition, some helper methods have been defined for key operations, such 
 
@@ -144,13 +144,16 @@ The Web and Android apps will be accessing the REST API through HTTP protocols s
 <img src="./diagrams/ClassDiagramDb.png"/>
 
 
-**WebAdmin Class Diagrams**
+**Web Admin Class Diagrams**
 
 The WebAdmin classes are used by the system administrator to manage the parking lots with related parking spaces as well as the on campus destinations a driver can choose from in the ParkMe Near mode.
 
 <img src="./diagrams/ClassDiagramWebAdmin.png"/>
 
 **Web DriverPark Class Diagrams**
+The Web DriverPark classes are used by a driver to accomplish the following tasks: select the ParkMe mode (i.e., ParkMe Valet or ParkMe Near); optionally select a destination when the ParkMe Near mode is chosen; provide a visual map of the route.
+
+<img src="./diagrams/ClassDiagramWebDriverPark.png"/>
 
 ### <a name = data_types></a>Data Types and Operation Signatures ###
 ..
