@@ -82,7 +82,7 @@ The following high level use cases and interactions illustrate how simple it is 
 
 * The SpaceFinder provides the system with real-time tabulation of the total number of vacant spaces in each parking lot on campus, and locates the best parking lot and available space.
 
-###Use Case 1 - ParkMe Valet###
+### Use Case 1 - ParkMe Valet: Automates trip from start to finish ###
 
 ParkMe Valet automatically routes the driver to the best parking space. The driver simply starts the app and relies on driving instructions provided by the Navigator. 
 
@@ -92,7 +92,7 @@ Utilizing the location service provided by a mobile device, ParkMe tracks the dr
 
 <img src="./diagrams/Report2_UcAutoParkMeInteraction.png"/>
 
-###Use Case 2 - ParkMe Near###
+### Use Case 2 - ParkMe Near: Lets the user park nearby a specific destination ###
 
 ParkMe close to my destination lets the driver select a building on campus so that it can prioritize parking lots in its vicinity. 
 
