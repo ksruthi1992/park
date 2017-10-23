@@ -371,7 +371,9 @@ We have also started the development process, including:
 In addition, we have implemented a slack channel for team collaboration and held periodic on campus meetings for ideation and planning.
 
 ### <a name = "Plan_of_Work"></a>Plan of Work ###
-..
+
+<img src="./diagrams/ParkMeProjectPlan_Report2.png" />
+
 
 ### <a name = "Breakdown_of_Responsibilities"></a>Breakdown of Responsibilities ###
 
