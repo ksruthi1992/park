@@ -82,4 +82,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             return R.raw.sac_state_parking_empty;
         }
     }
+
+
+
 }

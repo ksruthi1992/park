@@ -35,5 +35,23 @@ public class Lot7Activity extends AppCompatActivity implements OnMapReadyCallbac
         LatLng sacState = new LatLng(38.5553711, -121.4209975);
         // mMap.addMarker(new MarkerOptions().position(sacState).title("Sac State"));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sacState, 18));
+
+//        try {
+//            KmlLayer lot7 = new KmlLayer(mMap, R.raw.0, getApplicationContext());
+//            lot7.addLayerToMap();
+//            lot7.setOnFeatureClickListener(new KmlLayer.OnFeatureClickListener() {
+//                @Override
+//                public void onFeatureClick(Feature feature) {
+//                    Intent i = new Intent(getApplicationContext(),Lot7Activity.class);
+//                    startActivity(i);
+//                }
+//            });
+//        }
+//        catch (IOException ex) {
+//            ex.printStackTrace();
+//        }
+//        catch (XmlPullParserException x) {
+//            x.printStackTrace();
+//        }
     }
 }

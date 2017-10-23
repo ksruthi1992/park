@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //create an intent to get over to MapsActivity class
-        Intent i = new Intent(this, MapsActivity.class);
+        Intent i = new Intent(this, FrontPageActivity.class);
         startActivity(i);
 
     }
