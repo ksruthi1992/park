@@ -118,7 +118,15 @@ The Navigator class uses the users current Geo-location coordinates and the dest
 
 **SpaceFinder Class Diagrams**
 
+ParkMe Valet mode: The SpaceFinder class tries to find the best and closest parking spot from the current location of the user.
+
+ParkMe Near mode: The SpaceFinder class let's the user choose where they want to park from a list of locations.
+
+The SpaceFinder class uses the database to determine whether the parking space is vacant. If the parking space chosen by the SpaceFinder class is vacant, it will create a set of Geo location coordinates, using Google Maps API, of that parking space and hand them to the Navigator class. While the driver is on route, the SpaceFinder class will keep checking as to whether the parking spot is still vacant. If the parking space happens to fill up, the SpaceFinder class will find the closest parking space from the previous parking spot, create another set of Geo-location coordinates, and give them to the Navigator Class again.
+
+
 (Diagrams: Hugo)
+
 
 - driverDestination // Used in the ParkMe Near use case
 
