@@ -124,9 +124,10 @@ ParkMe Near mode: The SpaceFinder class let's the user choose where they want to
 
 The SpaceFinder class uses the database to determine whether the parking space is vacant. If the parking space chosen by the SpaceFinder class is vacant, it will create a set of Geo location coordinates, using Google Maps API, of that parking space and hand them to the Navigator class. While the driver is on route, the SpaceFinder class will keep checking as to whether the parking spot is still vacant. If the parking space happens to fill up, the SpaceFinder class will find the closest parking space from the previous parking spot, create another set of Geo-location coordinates, and give them to the Navigator Class again.
 
+<img src="./diagrams/SpaceFinder.png"/>
 
-(Diagrams: Hugo)
 
+<!--- (Diagrams: Hugo) 
 
 - driverDestination // Used in the ParkMe Near use case
 
@@ -134,7 +135,7 @@ Methods
 
 - FindBestLot( pDriverDestination : destinationId = NULL )
 - FindCandidateSpaceList( pLot : lotId )
-- ReserveSpace( pSpace : spaceId )
+- ReserveSpace( pSpace : spaceId ) --->
 
 
 **REST API Class Diagrams**
