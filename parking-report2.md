@@ -170,26 +170,58 @@ The Web DriverPark classes are used by a driver to accomplish the following task
 
 ***Attributes:***
 
-			curLat: String			Corresponds to the users current latitude coordinate.
-			curLong: String			Corresponds to the users current longitude coordinate.
-			dLat: String			Corresponds to the users destination latitude coordinates. This value will be derived or set to relevant campus coordinate as default.
-			dLong: String			Corresponds to the users destination longitude coordinates. This values will be derived or set to relevant campus coordinate as default.
+			curLat: String			
+						Corresponds to the users current latitude coordinate.
+			curLong: String			
+						Corresponds to the users current longitude coordinate.
+			dLat: String			
+						Corresponds to the users destination latitude 
+						coordinates. This value will be derived or set to 
+						relevant campus coordinate as default.
+			dLong: String			
+						Corresponds to the users destination longitude 
+						coordinates. This values will be derived or set to 
+						relevant campus coordinate as default.
 
 ***Operations:***
 
-			getCurLat()			Method retrieves the users current latitude location values when invoked.
-			getCurLong()		Method retrieves the users current longitude location values when invoked.
-			getCurLocation()	Method relies on the information received from the Google maps permission to access the users current location.
-			getDLat()			Method retrieves the users expected destination latitude coordinates.
-			getDLong()			Method retrieves the users expected destination longitude coordinates.
+			getCurLat()			
+						Method retrieves the users current latitude location 
+						values when invoked.
+			getCurLong()		
+						Method retrieves the users current longitude location 
+						values when invoked.
+			getCurLocation()	
+						Method relies on the information received from the Google 
+						maps permission to access the users current location.
+			getDLat()			
+						Method retrieves the users expected destination latitude 
+						coordinates.
+			getDLong()			
+						Method retrieves the users expected destination longitude coordinates.
 			getDestination(SpaceFinder dCoordinate)		
-								Method will use the information received from spaceFinder to set up destination coordinates (vacant space or campus) depending on the users current location
-			travelMode()		Sets up the travel mode to vehicle to be used by the Google Maps Directions API when handed- off.
-			pollingLocation()	Method will continuously poll the SpaceFinder to update the routes to get to the vacant space.
-			setCurLocation()	Method sets up the Google Maps Directions API with current location.
-			setDestination()	Method sets up the Google Maps Directions API with desired destination Geo coordinates.
-			checkIntent()		Method will check to see if there is a valid intent can startActivity with an activity ready to receive the intent.
-			navigateIntent()	Calls Google Maps Directions API with valid new Intent and context.
+						Method will use the information received from spaceFinder 
+						to set up destination coordinates (vacant space or campus) 
+						depending on the users current location
+			travelMode()		
+						Sets up the travel mode to vehicle to be used by the 
+						Google Maps Directions API when handed- off.
+			pollingLocation()	
+						Method will continuously poll the SpaceFinder to update 
+						the routes to get to the vacant space.
+			setCurLocation()	
+						Method sets up the Google Maps Directions API with current 
+						location.
+			setDestination()	
+						Method sets up the Google Maps Directions API with desired 
+						destination Geo coordinates.
+			checkIntent()		
+						Method will check to see if there is a valid intent can 
+						startActivity with an activity ready to receive the 
+						intent.
+			navigateIntent()	
+						Calls Google Maps Directions API with valid new Intent and 
+						context.
 
 
 
