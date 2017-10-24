@@ -118,9 +118,9 @@ The sensor class utilizes a Raspberry Pi microcomputer in conjunction with a sup
 
 **Navigator Class Diagrams**
 
-The Navigator class uses the users current Geo-location coordinates and the destination coordinates to setup a route. Once a route has been found the Google Maps Directions API will take over.
+The Navigator class uses the users current Geo-location coordinates and the destination coordinates to setup a route. The destination Geo coordinates are set to the campus if the user is more than a mile away. Once entering a parking lot the polling function will invoke the SpaceFinder class to find new Geo coordinates and set up a route. The route is determined by the latitude and longitude values received back from SpaceFinder. Polling will continue to take place every 10 seconds and update routes. Once a route has been found the Google Maps Directions API will take over. Proceeding updates will be managed by the Google Maps Direction API. 
 
-<img src="./diagrams/Class_Navigator.png"/>
+<img src="./diagrams/NavigatorClassDiagram.png"/>
 
 **SpaceFinder Class Diagrams**
 
@@ -171,7 +171,60 @@ The Web DriverPark classes are used by a driver to accomplish the following task
 <img src="./diagrams/ClassDiagramWebDriverPark.png"/>
 
 ### <a name = data_types></a>Data Types and Operation Signatures ###
-..
+
+**Navigator:**
+
+***Attributes:***
+
+			curLat: String			
+						Corresponds to the users current latitude coordinate.
+			curLong: String			
+						Corresponds to the users current longitude coordinate.
+			dLat: String			
+						Corresponds to the users destination latitude 
+						coordinates. This value will be derived or set to 
+						relevant campus coordinate as default.
+			dLong: String			
+						Corresponds to the users destination longitude 
+						coordinates. This values will be derived or set to 
+						relevant campus coordinate as default.
+
+***Operations:***
+
+		
+			Navigator(String lat, String long)
+						Constructor method takes in the current Geo coordincates
+						and stores the values.
+			getDLat()			
+						Method retrieves the users expected destination latitude 
+						coordinates.
+			getDLong()			
+						Method retrieves the users expected destination longitude coordinates.
+			getDestination(SpaceFinder dCoordinate)		
+						Method will use the information received from spaceFinder 
+						to set up destination coordinates (vacant space or campus) 
+						depending on the users current location
+			travelMode()		
+						Sets up the travel mode to vehicle to be used by the 
+						Google Maps Directions API when handed- off.
+			pollingLocation()	
+						Method will continuously poll the SpaceFinder to update 
+						the routes to get to the vacant space.
+			setCurLocation()	
+						Method sets up the Google Maps Directions API with current 
+						location.
+			setDestination()	
+						Method sets up the Google Maps Directions API with desired 
+						destination Geo coordinates.
+			checkIntent()		
+						Method will check to see if there is a valid intent can 
+						startActivity with an activity ready to receive the 
+						intent.
+			navigateIntent()	
+						Calls Google Maps Directions API with valid new Intent and 
+						context.
+
+
 
 ## <a name = "System_Architecture"></a>System Architecture and System Design ##
 
@@ -268,7 +321,10 @@ Observable
 - CandidateSpaceList collection to be notified when space availability changes
 
 ### <a name = "Data_Structures"></a>Data Structures ###
-..
+
+**Lists**
+
+Lists will be the main data structure used to store information such as vacant spaces, each driver's set of space options, etc. The Web Admin classes will be the ones that predominantly use this data structure to store the information.
 
 ## <a name = "User_Interface_Design"></a>User Interface Design and Implementation ##
 
@@ -319,7 +375,9 @@ We have also started the development process, including:
 In addition, we have implemented a slack channel for team collaboration and held periodic on campus meetings for ideation and planning.
 
 ### <a name = "Plan_of_Work"></a>Plan of Work ###
-..
+
+<img src="./diagrams/ParkMeProjectPlan_Report2.png" />
+
 
 ### <a name = "Breakdown_of_Responsibilities"></a>Breakdown of Responsibilities ###
 
