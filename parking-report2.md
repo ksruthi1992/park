@@ -315,7 +315,10 @@ Observable
 - CandidateSpaceList collection to be notified when space availability changes
 
 ### <a name = "Data_Structures"></a>Data Structures ###
-..
+
+**Lists**
+
+Lists will be the main data structure used to store information such as vacant spaces, each driver's set of space options, etc. The Web Admin classes will be the ones that predominantly use this data structure to store the information.
 
 ## <a name = "User_Interface_Design"></a>User Interface Design and Implementation ##
 
