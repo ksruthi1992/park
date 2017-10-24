@@ -114,7 +114,7 @@ The diagrams below provide an overview of the key classes used in our system.
 
 The Navigator class uses the users current Geo-location coordinates and the destination coordinates to setup a route. The destination Geo coordinates are set to the campus if the user is more than a mile away. Once entering a parking lot the polling function will invoke the SpaceFinder class to find new Geo coordinates and set up a route. The route is determined by the latitude and longitude values received back from SpaceFinder. Polling will continue to take place every 10 seconds and update routes. Once a route has been found the Google Maps Directions API will take over. Proceeding updates will be managed by the Google Maps Direction API. 
 
-<img src="./diagrams/Class_Navigator.png"/>
+<img src="./diagrams/NavigatorClassDiagram.png"/>
 
 **SpaceFinder Class Diagrams**
 
@@ -185,15 +185,10 @@ The Web DriverPark classes are used by a driver to accomplish the following task
 
 ***Operations:***
 
-			getCurLat()			
-						Method retrieves the users current latitude location 
-						values when invoked.
-			getCurLong()		
-						Method retrieves the users current longitude location 
-						values when invoked.
-			getCurLocation()	
-						Method relies on the information received from the Google 
-						maps permission to access the users current location.
+		
+			Navigator(String lat, String long)
+						Constructor method takes in the current Geo coordincates
+						and stores the values.
 			getDLat()			
 						Method retrieves the users expected destination latitude 
 						coordinates.
