@@ -5,12 +5,16 @@
 
     <Button
         android:text="Valet"
+        android:id="@+id/valet_button"
+        android:onClick="valet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     </Button>
 
     <Button
         android:text="Near"
+        android:onClick="near"
+        android:id="@+id/near_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

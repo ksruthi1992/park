@@ -109,6 +109,12 @@ The key difference between ParkMe Close and ParkMe Valet is that the driver can 
 ### <a name = "Class_Diagrams"></a>Class Diagram ###
 The diagrams below provide an overview of the key classes used in our system.
 
+**Sensor Class Diagrams**
+
+The sensor class utilizes a Raspberry Pi microcomputer in conjunction with a supersonic sensor which is used to detect the physical presence of a vehicle in a parking spot. When the supersonic sensor detects a vehicle, it sends a signal to the raspberry pi. From there, the pi is able to send information to the server on the status of the parking spot.
+
+<img src="./diagrams/ClassDiagramSensor.png"/>
+
 
 **Navigator Class Diagrams**
 
