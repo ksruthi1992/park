@@ -98,7 +98,7 @@ ParkMe close to my destination lets the driver select a building on campus so th
 
 <img src="./diagrams/Report2_UcAutoParkMe.png"/>
 
-The key difference between ParkMe Close and ParkMe Valet is that the driver can have the system prioritize parking lots close to his/her destination.
+The key difference between ParkMe Near and ParkMe Valet is that the driver can have the system prioritize parking lots close to his/her destination.
 
 <img src="./diagrams/Report2_UcAutoParkMeInteraction.png"/>
 
@@ -172,7 +172,7 @@ The Web DriverPark classes are used by a driver to accomplish the following task
 
 ### <a name = data_types></a>Data Types and Operation Signatures ###
 
-**Navigator:**
+####Navigator:####
 
 ***Attributes:***
 
@@ -223,6 +223,50 @@ The Web DriverPark classes are used by a driver to accomplish the following task
 			navigateIntent()	
 						Calls Google Maps Directions API with valid new Intent and 
 						context.
+
+
+####SpaceFinder####
+
+***Attributes:***
+
+        createdDLat: String            
+                    Corresponds to the users destination latitude coordinates. 
+
+        createdDLong: String           
+                    Corresponds to the users destination longitude coordinates.
+
+        curLat: String          
+                    Corresponds to the users current latitude coordinate.
+
+        curLong: String         
+                    Corresponds to the users current longitude coordinate.
+
+		isSpaceAvail : boolean
+					True if space is vacant false if not.
+					
+
+***Operations:***
+
+        driverDestination()
+					Used in ParkMe near, lets user choose from a list of buildings.
+
+        findBestLot()
+        			Automatically finds best lot from the user’s current location or from driver destination.
+
+        findCandidateSpaceList()
+					Automatically finds best space.
+
+        reserveSpace() 
+		 			Reserves space for user and creates a set of Geo-coordinates, but does not guarantee space will not fill up.
+
+        checkSpaceAvail()     
+                    Continually checks with sensor if the Space is vacant or not.
+
+		reserveNewSpace()	
+					If space is taken, will find a new Space and creates a new set of Geo-coordinates.	 
+	
+
+
 
 
 
