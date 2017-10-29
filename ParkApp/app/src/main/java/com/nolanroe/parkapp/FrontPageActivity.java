@@ -1,5 +1,8 @@
 package com.nolanroe.parkapp;
 
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -19,37 +22,25 @@ public class FrontPageActivity extends AppCompatActivity  {
         setContentView(R.layout.front_page_layout);
     }
 
-    public void valet(View view) {
-        Button valetButton = (Button) findViewById(R.id.valet_button);
-        valetButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), ValetActivity.class);
-                startActivity(i);
-            }
-        });
-    }
+    public void buttonPressed(View view)
+    {
+        if (view == findViewById(R.id.valet_button))
+        {
+            Intent i = new Intent(getApplicationContext(), ValetActivity.class);
+            startActivity(i);
+        }
 
-    public void near(View view) {
-        Button nearButton = (Button) findViewById(R.id.near_button);
-        nearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), NearActivity.class);
-                startActivity(i);
-            }
-        });
-    }
+        else if (view == findViewById(R.id.near_button))
+        {
+            Intent i = new Intent(getApplicationContext(), NearActivity.class);
+            startActivity(i);
 
-    public void viewMap(View view) {
-        Button viewMapButton = (Button) findViewById(R.id.view_map_button);
-        viewMapButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), MapsActivity.class);
-                startActivity(i);
-            }
-        });
+        }
+        else if (view == findViewById(R.id.view_map_button))
+        {
+            Intent i = new Intent(getApplicationContext(), MapsActivity.class);
+            startActivity(i);
+        }
     }
 
 }

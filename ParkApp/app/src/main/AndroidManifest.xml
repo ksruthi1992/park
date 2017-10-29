@@ -43,7 +43,7 @@
             android:label="ValetActivity"></activity>
 
         <activity android:name=".NearActivity"
-            android:label="NearActivity"></activity>
+            android:label="ValetActivity"></activity>
 
         <activity android:name=".FrontPageActivity"
             android:label="FrontPage"></activity>

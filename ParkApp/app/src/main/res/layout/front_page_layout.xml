@@ -1,28 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <Button
-        android:text="Valet"
+        android:text="@string/valet"
         android:id="@+id/valet_button"
-        android:onClick="valet"
+        android:onClick="buttonPressed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     </Button>
 
     <Button
-        android:text="Near"
-        android:onClick="near"
+        android:text="@string/near"
+        android:onClick="buttonPressed"
         android:id="@+id/near_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <Button
-        android:text="View Map"
+        android:text="@string/view_map"
         android:id="@+id/view_map_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="viewMap"/>
+        android:onClick="buttonPressed"/>
 
 </LinearLayout>
