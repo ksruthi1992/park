@@ -24,19 +24,19 @@ public class FrontPageActivity extends AppCompatActivity  {
 
     public void buttonPressed(View view)
     {
-        if (view == findViewById(R.id.valet_button))
+        if (view == findViewById(R.id.valet))
         {
             Intent i = new Intent(getApplicationContext(), ValetActivity.class);
             startActivity(i);
         }
 
-        else if (view == findViewById(R.id.near_button))
+        else if (view == findViewById(R.id.near))
         {
             Intent i = new Intent(getApplicationContext(), NearActivity.class);
             startActivity(i);
 
         }
-        else if (view == findViewById(R.id.view_map_button))
+        else if (view == findViewById(R.id.map))
         {
             Intent i = new Intent(getApplicationContext(), MapsActivity.class);
             startActivity(i);

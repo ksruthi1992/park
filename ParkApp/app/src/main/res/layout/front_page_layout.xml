@@ -6,25 +6,25 @@
 
 
     <Button
-        android:text="@string/valet"
-        android:id="@+id/valet_button"
-        android:onClick="buttonPressed"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </Button>
-
-    <Button
-        android:text="@string/near"
-        android:onClick="buttonPressed"
-        android:id="@+id/near_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <Button
-        android:text="@string/view_map"
-        android:id="@+id/view_map_button"
+        android:id="@+id/valet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/valet"
         android:onClick="buttonPressed"/>
 
+
+    <Button
+        android:id="@+id/near"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/near"
+        android:onClick="buttonPressed"/>
+
+
+    <Button
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/view_map"
+        android:onClick="buttonPressed"/>
 </LinearLayout>
