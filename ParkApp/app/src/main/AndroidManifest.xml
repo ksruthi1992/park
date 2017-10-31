@@ -34,26 +34,26 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
-
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".ValetActivity"
-            android:label="ValetActivity"></activity>
-
-        <activity android:name=".NearActivity"
-            android:label="ValetActivity"></activity>
-
-        <activity android:name=".FrontPageActivity"
-            android:label="FrontPage"></activity>
-
-        <activity android:name=".Lot7Activity"
-            android:label="Lot7"></activity>
-
+        <activity
+            android:name=".NavigatorActivity"
+            android:label="ValetActivity" />
+        <activity
+            android:name=".NearActivity"
+            android:label="ValetActivity" />
+        <activity
+            android:name=".FrontPageActivity"
+            android:label="FrontPage" />
+        <activity
+            android:name=".Lot7Activity"
+            android:label="Lot7" />
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".ValetActivity"></activity>
     </application>
 
 </manifest>

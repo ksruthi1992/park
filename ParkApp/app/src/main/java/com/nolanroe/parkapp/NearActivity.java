@@ -1,6 +1,5 @@
 package com.nolanroe.parkapp;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -65,17 +64,19 @@ public class NearActivity extends AppCompatActivity {
         listBuildings.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                //Testing out the first 4 buildings from the list
                 if (position == 0 || position == 1 || position == 2 || position == 3){
 
-                    //Would actually access database to find available spaces and create a set of geo-coords but this is just a test
-                    Toast.makeText(NearActivity.this, "Best Lot Found: Lot 2\nSearching for best parking space..." , Toast.LENGTH_SHORT).show(); //
+                    /*Would actually access database to find available spaces and create a set of geo-coords but this is just a test. Still need to find a way to
+                    get the best parking lot by figuring out what parking spaces are available from the database.*/
+                    Toast.makeText(NearActivity.this, "Best Lot Found: LOT 2\nSearching for best parking space..." , Toast.LENGTH_SHORT).show(); //
                     //String lat = getCoordAfterFindingSpaceFroDatabase;
                     //String long = getLatAfterFindingSpaceFromDatabase
                     //dummyGeoCoords.add(lat);
                     //dummyGeoCoords.add(long);
                     dummyGeoCoords.add("38.335751");
                     dummyGeoCoords.add("-121.252725");
-                    Intent myIntent = new Intent(view.getContext(), ValetActivity.class);
+                    Intent myIntent = new Intent(view.getContext(), NavigatorActivity.class);
                     myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
                     startActivity(myIntent);
 
