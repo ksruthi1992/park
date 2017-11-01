@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <merger version="3"><dataSet config="main"><source path="C:\Users\Alejandra\Documents\CSC131\park\ParkApp\library\src\main\shaders"/></dataSet><dataSet config="debug"><source path="C:\Users\Alejandra\Documents\CSC131\park\ParkApp\library\src\debug\shaders"/></dataSet></merger>
+=======
+<merger version="3"><dataSet config="main"><source path="C:\Users\hugot\Desktop\park\ParkApp\library\src\main\shaders"/></dataSet><dataSet config="debug"><source path="C:\Users\hugot\Desktop\park\ParkApp\library\src\debug\shaders"/></dataSet></merger>
+>>>>>>> a611c3e1f263045f83138ff3d0f77c68ca3c88a6
