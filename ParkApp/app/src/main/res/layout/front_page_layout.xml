@@ -1,31 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_margin="4pt">
 
 
-    <Button
-        android:id="@+id/valet"
-        style="@style/Widget.AppCompat.Button"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="buttonPressed"
-        android:text="@string/valet" />
+        android:orientation="horizontal"
+        >
 
+        <ImageView
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:src="@drawable/parking_emblem"
+            />
 
-    <Button
-        android:id="@+id/near"
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="4pt"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ParkMe"
+                android:textSize="32sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="ParkMe will automatically select the best parking spot for you"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="buttonPressed"
-        android:text="@string/near" />
+        android:text="Select a service:"
+        android:textSize="40sp"/>
 
 
-    <Button
-        android:id="@+id/map"
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="buttonPressed"
-        android:text="@string/view_map" />
+        android:padding="12dp"
+        android:background="@layout/relativelayout_custom_create">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ParkMe Valet"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:id="@+id/top"/>
+
+        <TextView
+            android:id="@+id/middle"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top"
+            android:layout_marginTop="8dp"
+            android:text="ParkMe will automatically select the best parking lot for you"/>
+
+        <Button
+            android:id="@+id/valet"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="buttonPressed"
+            android:background="#cef6f5"
+            android:text="@string/valet"
+            android:layout_below="@+id/middle"
+            android:layout_alignRight="@+id/middle"/>
+
+
+    </RelativeLayout>
+
 </LinearLayout>
