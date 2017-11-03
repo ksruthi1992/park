@@ -7,24 +7,25 @@
 
     <Button
         android:id="@+id/valet"
+        style="@style/Widget.AppCompat.Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/valet"
-        android:onClick="buttonPressed"/>
+        android:onClick="buttonPressed"
+        android:text="@string/valet" />
 
 
     <Button
         android:id="@+id/near"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/near"
-        android:onClick="buttonPressed"/>
+        android:onClick="buttonPressed"
+        android:text="@string/near" />
 
 
     <Button
         android:id="@+id/map"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/view_map"
-        android:onClick="buttonPressed"/>
+        android:onClick="buttonPressed"
+        android:text="@string/view_map" />
 </LinearLayout>
