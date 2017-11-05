@@ -45,7 +45,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Select a service:"
-        android:textSize="40sp"/>
+        android:textSize="40sp"
+        android:textColor="#000000"/>
 
 
 
@@ -79,12 +80,56 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:onClick="buttonPressed"
-            android:background="#cef6f5"
+            android:background="#0174DF"
+            android:textColor="#FFFFFF"
             android:text="@string/valet"
             android:layout_below="@+id/middle"
             android:layout_alignRight="@+id/middle"/>
 
 
     </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@layout/relativelayout_custom_create"
+        android:padding="12dp"
+        android:layout_marginTop="16dp">
+
+
+        <TextView
+            android:id="@+id/top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ParkMe Near"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top"
+            android:layout_marginTop="8dp"
+            android:text="ParkMe will guide you to a parking space near to your chosen destination"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/valet"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/middle"
+            android:layout_below="@+id/middle"
+            android:layout_gravity="center"
+            android:background="#0174DF"
+            android:textColor="#FFFFFF"
+            android:onClick="buttonPressed"
+            android:text="@string/near" />
+        
+        
+
+    </RelativeLayout>
+
 
 </LinearLayout>
