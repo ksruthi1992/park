@@ -98,7 +98,7 @@
 
 
         <TextView
-            android:id="@+id/top"
+            android:id="@+id/top2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="ParkMe Near"
@@ -106,21 +106,21 @@
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/middle"
+            android:id="@+id/middle2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/top"
+            android:layout_below="@+id/top2"
             android:layout_marginTop="8dp"
             android:text="ParkMe will guide you to a parking space near to your chosen destination"
             android:textSize="18dp" />
 
         <Button
-            android:id="@+id/valet"
+            android:id="@+id/near"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignRight="@+id/middle"
-            android:layout_below="@+id/middle"
+            android:layout_alignRight="@+id/middle2"
+            android:layout_below="@+id/middle2"
             android:layout_gravity="center"
             android:background="#0174DF"
             android:textColor="#FFFFFF"
