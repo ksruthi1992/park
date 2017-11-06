@@ -35,7 +35,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="ParkMe will automatically select the best parking spot for you"/>
+                android:text="Simple, fast, reliable"/>
 
         </LinearLayout>
 
