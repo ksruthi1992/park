@@ -8,11 +8,11 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
         //create an intent to get over to FrontPageActivity class
         Intent i = new Intent(this, FrontPageActivity.class);
         startActivity(i);
+
+        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_main);
     }
 }
