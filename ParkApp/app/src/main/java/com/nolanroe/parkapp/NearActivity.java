@@ -68,22 +68,21 @@ public class NearActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String text = listBuildings.getItemAtPosition(position).toString();//first method
-                //Student Lot 2 //2/37
-                if (text.equals("Draper Hall") || text.equals("Sierra Hall")) {
-                    Toast.makeText(NearActivity.this, "Best Lot Found: STUDENT LOT 2\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
-                    dummyGeoCoords.add("38.335751");
-                    dummyGeoCoords.add("-121.252725");
+                //Lot 2 //2/37
+                if (text.equals("Draper Hall") || text.equals("Sierra Hall") || text.equals("Jenkins Hall") || text.equals("Desmond Hall") || text.equals("Dining Commons")){
+                    Toast.makeText(NearActivity.this, "Best Lot Found: LOT 2\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
+                    dummyGeoCoords.add("38.565985");
+                    dummyGeoCoords.add("-121.424618");
                     Intent myIntent = new Intent(view.getContext(), NavigatorActivity.class);
                     myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
                     startActivity(myIntent);
                 }
 
-                //Lot 2  //7/37
-                if (text.equals("Dining Commons") || text.equals("Sutter Hall") || text.equals("Desmond Hall") || text.equals("Shasta Hall")
-                    || text.equals("Jenkins Hall")){
-                    Toast.makeText(NearActivity.this, "Best Lot Found: LOT 2\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
-                    dummyGeoCoords.add("38.335751");
-                    dummyGeoCoords.add("-121.252725");
+                //Student Lot 2  //7/37
+                if (text.equals("Shasta Hall") || text.equals("River Front Center") ){
+                    Toast.makeText(NearActivity.this, "Best Lot Found: STUDENT LOT 2\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
+                    dummyGeoCoords.add("38.564094");
+                    dummyGeoCoords.add("-121.253284");
                     Intent myIntent = new Intent(view.getContext(), NavigatorActivity.class);
                     myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
                     startActivity(myIntent);
@@ -91,10 +90,10 @@ public class NearActivity extends AppCompatActivity {
 
                 //Lot 1  //15/37
                 if (text.equals("Sacramento Hall") || text.equals("Lassen Hall") || text.equals("Yosemite Hall") || text.equals("Solano Hall")
-                        || text.equals("River Front Center") || text.equals("Douglass Hall") || text.equals("Kadema Hall") || text.equals("Alpine Hall")){
+                    || text.equals("Douglass Hall") || text.equals("Kadema Hall") || text.equals("Alpine Hall")){
                     Toast.makeText(NearActivity.this, "Best Lot Found: LOT 1\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
-                    dummyGeoCoords.add("38.335751");
-                    dummyGeoCoords.add("-121.252725");
+                    dummyGeoCoords.add("38.563318");
+                    dummyGeoCoords.add("-121.428851");
                     Intent myIntent = new Intent(view.getContext(), NavigatorActivity.class);
                     myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
                     startActivity(myIntent);
@@ -103,8 +102,8 @@ public class NearActivity extends AppCompatActivity {
                 //Lot 7  //18/37
                 if (text.equals("El Dorado Hall") || text.equals("Art Sculpture Lab") || text.equals("Child Development Center")){
                     Toast.makeText(NearActivity.this, "Best Lot Found: LOT 7\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
-                    dummyGeoCoords.add("38.335751");
-                    dummyGeoCoords.add("-121.252725");
+                    dummyGeoCoords.add("38.556179");
+                    dummyGeoCoords.add("-121.419705");
                     Intent myIntent = new Intent(view.getContext(), NavigatorActivity.class);
                     myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
                     startActivity(myIntent);
@@ -113,8 +112,8 @@ public class NearActivity extends AppCompatActivity {
                 //Lot 8  //22/37
                 if (text.equals("Union") || text.equals("Hornet Stadium") || text.equals("Tahoe Hall") || text.equals("Benicia Hall")) {
                     Toast.makeText(NearActivity.this, "Best Lot Found: LOT 8\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
-                    dummyGeoCoords.add("38.335751");
-                    dummyGeoCoords.add("-121.252725");
+                    dummyGeoCoords.add("38.556152");
+                    dummyGeoCoords.add("-121.420716");
                     Intent myIntent = new Intent(view.getContext(), NavigatorActivity.class);
                     myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
                     startActivity(myIntent);
@@ -123,8 +122,8 @@ public class NearActivity extends AppCompatActivity {
                 //Parking Struct 1 //26/37
                 if (text.equals("Capistrano Hall") || text.equals("Brighton Hall") || text.equals("Eureka Hall") || text.equals("Mariposa Hall")) {
                     Toast.makeText(NearActivity.this, "Found: PARKING STRUCTURE 1\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
-                    dummyGeoCoords.add("38.335751");
-                    dummyGeoCoords.add("-121.252725");
+                    dummyGeoCoords.add("38.559441");
+                    dummyGeoCoords.add("-121.426895");
                     Intent myIntent = new Intent(view.getContext(), NavigatorActivity.class);
                     myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
                     startActivity(myIntent);
@@ -134,8 +133,8 @@ public class NearActivity extends AppCompatActivity {
                 if (text.equals("The Well") || text.equals("AIRC") || text.equals("Library") || text.equals("Mariposa Hall")
                         || text.equals("Placer Hall") || text.equals("Homboldt Hall") || text.equals("Santa Clara Hall")) {
                     Toast.makeText(NearActivity.this, "Found: PARKING STRUCTURE 3\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
-                    dummyGeoCoords.add("38.335751");
-                    dummyGeoCoords.add("-121.252725");
+                    dummyGeoCoords.add("38.556882");
+                    dummyGeoCoords.add("-121.420941");
                     Intent myIntent = new Intent(view.getContext(), NavigatorActivity.class);
                     myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
                     startActivity(myIntent);
@@ -145,8 +144,8 @@ public class NearActivity extends AppCompatActivity {
                 if (text.equals("Hornet Bookstore") || text.equals("AIRC") || text.equals("Library") || text.equals("Mariposa Hall")
                         || text.equals("Mendocino Hall") || text.equals("Sequioa Hall") || text.equals("Riverside Hall")) {
                     Toast.makeText(NearActivity.this, "Found: PARKING STRUCTURE 2\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
-                    dummyGeoCoords.add("38.335751");
-                    dummyGeoCoords.add("-121.252725");
+                    dummyGeoCoords.add("38.559037");
+                    dummyGeoCoords.add("-121.420265");
                     Intent myIntent = new Intent(view.getContext(), NavigatorActivity.class);
                     myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
                     startActivity(myIntent);
