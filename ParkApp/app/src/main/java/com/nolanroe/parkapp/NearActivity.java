@@ -10,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SearchView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -36,12 +37,11 @@ public class NearActivity extends AppCompatActivity {
 
         /*Added by Hugo: Created a list of buildings with search functionality*/
         SearchView searchview = (SearchView) findViewById(R.id.searchBuildings);
-        ListView listBuildings = (ListView) findViewById(R.id.buildingsList);
-        final String[] listOfBuildings = {"Draper Hall", "Dining Commons", "Sierra Hall", "Sutter Hall", "American River Yard",
-                "Jenkins Hall", "Desmond Hall", "Shasta Hall", "River Front Center", "Sacramento Hall",
-                "Lassen Hall", "Yosemite Hall", "Solano Hall", "Kadema Hall", "Douglass Hall", "Mendocino Hall", "Sequoia Hall", "Placer Hall",
-                "Alpine Hall", "Mariposa Hall", "Eureka Hall", "Brighton Hall", "Humboldt Hall", "Riverside Hall", "Santa Clara Hall",
-                "Union", "Hornet Bookstore", "AIRC", "Child Development Center", "El Dorado Hall", "Art Sculpture Lab", "Library", "Studio Theatre",
+        final ListView listBuildings = (ListView) findViewById(R.id.buildingsList);
+        final String[] listOfBuildings = {"Draper Hall", "Dining Commons", "Sierra Hall", "Sutter Hall", "Jenkins Hall", "Desmond Hall", "Shasta Hall" ,
+                "River Front Center", "Sacramento Hall", "Lassen Hall", "Yosemite Hall", "Solano Hall", "Kadema Hall", "Douglass Hall", "Mendocino Hall",
+                "Sequoia Hall", "Placer Hall", "Alpine Hall", "Mariposa Hall", "Eureka Hall", "Brighton Hall", "Humboldt Hall", "Riverside Hall", "Santa Clara Hall",
+                "Union", "Hornet Bookstore", "AIRC", "Child Development Center", "El Dorado Hall", "Art Sculpture Lab", "Library",
                 "Capistrano Hall", "Amador Hall", "Tahoe Hall", "Benecia Hall", "The Well", "Hornet Stadium"};
         Arrays.sort(listOfBuildings);
         final ArrayAdapter<String> adapter = new ArrayAdapter<String>(listBuildings.getContext(), android.R.layout.simple_list_item_1, listOfBuildings);
@@ -58,29 +58,102 @@ public class NearActivity extends AppCompatActivity {
                 adapter.getFilter().filter(newText);
                 return false;
             }
+
         });
 
-        /*Added by Hugo: Test of what will happen when selecting selecting building from list*/
+        /*Added by Hugo: Test of what will happen when selecting selecting building from list
+        *Made the WHOLE list clickable and added closest Parking lots to each building for now
+        */
         listBuildings.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                //Testing out the first 4 buildings from the list
-                if (position == 0 || position == 1 || position == 2 || position == 3){
-
-                    /*Would actually access database to find available spaces and create a set of geo-coords but this is just a test. Still need to find a way to
-                    get the best parking lot by figuring out what parking spaces are available from the database.*/
-                    Toast.makeText(NearActivity.this, "Best Lot Found: LOT 2\nSearching for best parking space..." , Toast.LENGTH_SHORT).show(); //
-                    //String lat = getCoordAfterFindingSpaceFroDatabase;
-                    //String long = getLatAfterFindingSpaceFromDatabase
-                    //dummyGeoCoords.add(lat);
-                    //dummyGeoCoords.add(long);
+                String text = listBuildings.getItemAtPosition(position).toString();//first method
+                //Student Lot 2 //2/37
+                if (text.equals("Draper Hall") || text.equals("Sierra Hall")) {
+                    Toast.makeText(NearActivity.this, "Best Lot Found: STUDENT LOT 2\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
                     dummyGeoCoords.add("38.335751");
                     dummyGeoCoords.add("-121.252725");
                     Intent myIntent = new Intent(view.getContext(), NavigatorActivity.class);
                     myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
                     startActivity(myIntent);
-
                 }
+
+                //Lot 2  //7/37
+                if (text.equals("Dining Commons") || text.equals("Sutter Hall") || text.equals("Desmond Hall") || text.equals("Shasta Hall")
+                    || text.equals("Jenkins Hall")){
+                    Toast.makeText(NearActivity.this, "Best Lot Found: LOT 2\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
+                    dummyGeoCoords.add("38.335751");
+                    dummyGeoCoords.add("-121.252725");
+                    Intent myIntent = new Intent(view.getContext(), NavigatorActivity.class);
+                    myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
+                    startActivity(myIntent);
+                }
+
+                //Lot 1  //15/37
+                if (text.equals("Sacramento Hall") || text.equals("Lassen Hall") || text.equals("Yosemite Hall") || text.equals("Solano Hall")
+                        || text.equals("River Front Center") || text.equals("Douglass Hall") || text.equals("Kadema Hall") || text.equals("Alpine Hall")){
+                    Toast.makeText(NearActivity.this, "Best Lot Found: LOT 1\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
+                    dummyGeoCoords.add("38.335751");
+                    dummyGeoCoords.add("-121.252725");
+                    Intent myIntent = new Intent(view.getContext(), NavigatorActivity.class);
+                    myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
+                    startActivity(myIntent);
+                }
+
+                //Lot 7  //18/37
+                if (text.equals("El Dorado Hall") || text.equals("Art Sculpture Lab") || text.equals("Child Development Center")){
+                    Toast.makeText(NearActivity.this, "Best Lot Found: LOT 7\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
+                    dummyGeoCoords.add("38.335751");
+                    dummyGeoCoords.add("-121.252725");
+                    Intent myIntent = new Intent(view.getContext(), NavigatorActivity.class);
+                    myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
+                    startActivity(myIntent);
+                }
+
+                //Lot 8  //22/37
+                if (text.equals("Union") || text.equals("Hornet Stadium") || text.equals("Tahoe Hall") || text.equals("Benicia Hall")) {
+                    Toast.makeText(NearActivity.this, "Best Lot Found: LOT 8\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
+                    dummyGeoCoords.add("38.335751");
+                    dummyGeoCoords.add("-121.252725");
+                    Intent myIntent = new Intent(view.getContext(), NavigatorActivity.class);
+                    myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
+                    startActivity(myIntent);
+                }
+
+                //Parking Struct 1 //26/37
+                if (text.equals("Capistrano Hall") || text.equals("Brighton Hall") || text.equals("Eureka Hall") || text.equals("Mariposa Hall")) {
+                    Toast.makeText(NearActivity.this, "Found: PARKING STRUCTURE 1\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
+                    dummyGeoCoords.add("38.335751");
+                    dummyGeoCoords.add("-121.252725");
+                    Intent myIntent = new Intent(view.getContext(), NavigatorActivity.class);
+                    myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
+                    startActivity(myIntent);
+                }
+
+                //Parking Struct 3 //33/37
+                if (text.equals("The Well") || text.equals("AIRC") || text.equals("Library") || text.equals("Mariposa Hall")
+                        || text.equals("Placer Hall") || text.equals("Homboldt Hall") || text.equals("Santa Clara Hall")) {
+                    Toast.makeText(NearActivity.this, "Found: PARKING STRUCTURE 3\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
+                    dummyGeoCoords.add("38.335751");
+                    dummyGeoCoords.add("-121.252725");
+                    Intent myIntent = new Intent(view.getContext(), NavigatorActivity.class);
+                    myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
+                    startActivity(myIntent);
+                }
+
+                //Parking Struct 2 //27/37
+                if (text.equals("Hornet Bookstore") || text.equals("AIRC") || text.equals("Library") || text.equals("Mariposa Hall")
+                        || text.equals("Mendocino Hall") || text.equals("Sequioa Hall") || text.equals("Riverside Hall")) {
+                    Toast.makeText(NearActivity.this, "Found: PARKING STRUCTURE 2\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
+                    dummyGeoCoords.add("38.335751");
+                    dummyGeoCoords.add("-121.252725");
+                    Intent myIntent = new Intent(view.getContext(), NavigatorActivity.class);
+                    myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
+                    startActivity(myIntent);
+                }
+                //Lot 10
+
+                //Lot 9
             }
         });
     }
