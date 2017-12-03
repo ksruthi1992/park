@@ -302,7 +302,12 @@ In the works..
 
 ## <a name = "Nonfunction_Reqs"></a>Nonfunctional Requirements ##
 
-In the works..
+1. The system allows for a hands free experience through navigation.
+
+2. The system asks the user if they wish to navigate to the nearest parking lot.
+
+3. The system asks user to choose a vacant parking space from the list. The list should be ordered from nearest to farthest vacant parking space.
+
 
 ## <a name = "Effort_Estimation"></a>Effort Estimation using Use Case Points ##
 
