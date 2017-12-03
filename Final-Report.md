@@ -303,10 +303,13 @@ In the works..
 ## <a name = "Nonfunction_Reqs"></a>Nonfunctional Requirements ##
 
 1. The system allows for a hands free experience through navigation.
+- This is important because it will allow for a diverse and stress-free experience for drivers. This will also increase the safety of the driver while using the application.
 
 2. The system asks the user if they wish to navigate to the nearest parking lot.
+- This is important to the system because it will save the user time. The expected tendency is that the driver will often prefer to go to the nearest vacant parking spot rather than searching for one.
 
 3. The system asks user to choose a vacant parking space from the list. The list should be ordered from nearest to farthest vacant parking space.
+- This is important to have a second source of time saving tool for drivers. If they do not choose the nearest parking spot, then they will be given a list of the best possible suggestions. 
 
 
 ## <a name = "Effort_Estimation"></a>Effort Estimation using Use Case Points ##
