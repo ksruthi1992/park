@@ -11,6 +11,9 @@
 
 **[Glossary](#Glossary)**
 
+- *[Technical Terms](#technical)*
+- *[Non-Technical Terms](#nontechnical)*
+
 **[Functional Requirement Specifications](#Functional_Requirement)**
 
 - *[Stake Holders](#stake_holders)*
@@ -97,6 +100,21 @@ The database will have outbound communication with the cell phone app along with
 The system as a whole will largely be event based. The database becomes updated once it receives stimulus of a change in state from the sensors via the internet. From there, signs and displays will be updated based on the new overall state of the database. The web interface and mobile phone app will also be updated based on these events but may be updated incrementally to save bandwidth. The mobile app and interface are also event based systems in their own respect. A click to see the detailed state of a lot is an event trigger by the user. A request to receive directions to a certain spot is also an event created by the user. 
 
 ## <a name = "Glossary"></a>Glossary ##
+### <a name = technical></a>Technical Terms ###
+
+1. Database - collection of data that hold the parking lots, parking space and availability 
+2. Sensor - a device that detects whether a parking space is occupied 
+3. Rest API - web services are a way of providing interoperability between computer systems on the Internet
+4. Google Maps - Google Maps is a web mapping service developed by Google integrated to find the current location of the user
+5. Geo-coordinates - number based coordinate system used in geography that enables every location on Earth
+6. Raspberry PI - microcomputer used to communicate the sensor information with the database
+
+### <a name = nontechnical></a>Non-Technical Terms ###
+
+1. Vacant - refers to parking spaces available for use
+2. Driver - refers to the user of the application searching for a parking space
+3. Hands Free - navigation directions are provided through the application
+
 
 ## <a name = "Functional_Requirement"></a>Functional Requirement Specifications ##
 
