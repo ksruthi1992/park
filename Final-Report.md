@@ -593,6 +593,28 @@ Simplicity is what distinguishes the ParkMe app for other solutions. Thus, the u
 ## <a name = "Conclusions"></a>Conclusions and Future Work ##
 
 ## <a name = "References"></a>References ##
+1) Sac State Parking Map
+
+[http://www.csus.edu/nsm/about%20nsm/resources%20docs/color_map.pdf](http://www.csus.edu/nsm/about%20nsm/resources%20docs/color_map.pdf)
+
+
+2) Google Maps API
+
+[https://developers.google.com/maps](https://developers.google.com/maps/)
+
+
+3) Android Studio
+
+[https://developer.android.com/studio/index.html](https://developer.android.com/studio/index.html)
+
+
+4) "Software Engineering book", Ivan Marsic
+
+[http://www.ece.rutgers.edu/~marsic/books/SE/book-SE_marsic.pdf](http://www.ece.rutgers.edu/~marsic/books/SE/book-SE_marsic.pdf)
+
+
+
+
 
 
 
