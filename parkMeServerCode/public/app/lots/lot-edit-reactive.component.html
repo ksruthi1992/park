@@ -1,0 +1,96 @@
+<div>
+  <header>
+    <h3>
+      <span class="glyphicon glyphicon-map-marker"></span>
+      {{ lot.pLotName }} - {{ customer.pLotDesc }}
+  </h3>
+  </header>
+  <br />
+  <form [formGroup]="lotForm" (ngSubmit)="submit(lotForm)" class="editForm" novalidate>
+ 
+    <div class="form-group">
+      <label>Lot Name</label>
+      <input type="text" class="form-control" formControlName="pLotName" />
+      <div class="alert alert-danger" [hidden]="lotForm.controls.pLotName.untouched || lotForm.controls.pLotName.valid">Name is required</div>
+    </div>
+    <div class="form-group">
+      <label>Description</label>
+      <input type="text" class="form-control" formControlName="pLotDesc" />
+      <div class="alert alert-danger" [hidden]="lotForm.controls.pLotDesc.untouched || lotForm.controls.pLotDesc.valid">Description is required</div>
+    </div>
+
+    <div class="form-group">
+      <label>Parking Light</label>
+      <br />
+      <div class="radio">
+        <label>
+          <input type="radio" name="pLotSign" formControlName="pLotSign" value="greenlight" />
+          Green - parking available
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="pLotSign" formControlName="pLotSign" value="redlight"  /> 
+          Red - parking not available
+        </label>
+      </div>
+    </div>
+ 
+    <div class="form-group">
+      <label>Status</label>
+      <select class="form-control"  formControlName="pLotState">
+              <option [ngValue]="Active" selected>Active</option>
+              <option [ngValue]="Suspended">Suspended</option>
+              <option [ngValue]="Closed">Closed</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Type</label>
+      <select class="form-control" formControlName="pLotType">
+              <option [ngValue]="Faculty">Faculty</option>
+              <option [ngValue]="Faculty/Student">Faculty/Student</option>
+              <option [ngValue]="Handicapped">Handicapped</option>
+              <option [ngValue]="Resident">Resident</option>
+              <option [ngValue]="Student">Student</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Vacancy</label>
+      <input type="text" class="form-control" formControlName="pLotVacancy" />
+      <div class="alert alert-danger" [hidden]="lotForm.controls.pLotVacancy.untouched || lotForm.controls.pLotVacancy.valid">Number of vacancies is required</div>
+    </div>
+    
+    <div class="form-group">
+      <label>Latitude</label>
+      <input type="text" class="form-control" formControlName="pLotGeoLat" />
+      <div class="alert alert-danger" [hidden]="lotForm.controls.pLotGeoLat.untouched || lotForm.controls.pLotGeoLat.valid">Geo Latitude Coordinate is required</div>
+    </div>
+    
+    <div class="form-group">
+      <label>Longitude</label>
+      <input type="text" class="form-control"  formControlName="pLotGeoLong" />
+      <div class="alert alert-danger" [hidden]="lotForm.controls.pLotGeoLong.untouched || lotForm.controls.pLotGeoLong.valid">Geo Longitude Coordinate is required</div>
+    </div>
+
+    <br />
+
+    <div *ngIf="lot">
+      <div class="alert alert-warning" *ngIf="lot._id && deleteMessageEnabled">
+         Delete Lot?&nbsp;&nbsp;<button class="btn btn-danger" (click)="delete($event)">Yes</button>&nbsp;&nbsp;
+         <button class="btn btn-default" (click)="deleteMessageEnabled = false">No</button>
+      </div>
+      <button class="btn btn-danger" *ngIf="lot._id && !deleteMessageEnabled" (click)="deleteMessageEnabled = true">Delete</button>&nbsp;&nbsp;
+
+      <div class="pull-right" *ngIf="!deleteMessageEnabled">
+        <button class="btn btn-default" (click)="cancel($event)">Cancel</button>&nbsp;&nbsp;
+        <button type="submit" class="btn btn-success" [disabled]="!lotForm.valid">{{ operationText }}</button>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="alert alert-danger" *ngIf="errorMessage != null">{{ errorMessage }}</div>
+
+  </form>
+</div>

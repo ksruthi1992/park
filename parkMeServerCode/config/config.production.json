@@ -1,0 +1,7 @@
+{
+    "databaseConfig": {
+        "cPort": "10255",
+        "authKey": "PMHqtUwwQZqJfpSCY91Lr3oCJy94jKbinwBnN34RRVuzzxcYjcMlGIMGcmqvY8yYeHIfw4KnNywiXZOI41YsuA==",
+        "dbName": "parkme"
+    }
+}

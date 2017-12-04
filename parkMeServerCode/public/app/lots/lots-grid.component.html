@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row grid-container">
+        <div class="col-md-10">
+            <div class="table">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th (click)="sort('pLotName')">Name</th>
+                            <th (click)="sort('pLotState')">State</th>
+                            <th (click)="sort('pLotType')">Type</th>
+                            <th (click)="sort('pLotVacancy')">Vacancy</th>
+                            <th (click)="sort('pLotDesc')">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let lot of lots;trackBy:trackby.lot">
+                            <td><img src="images/{{ lot.pLotSign | lowercase }}.png"
+                                    class="card-image" alt="{{ lot.pLotSign | lowercase }}" /></td>
+                            <td><a [routerLink]="['/lots',lot._id]">{{ lot.pLotName }}</a></td>
+                            <td>{{ lot.pLotState }}</td>
+                            <td>{{ lot.pLotType }}</td>
+                            <td>{{ lot.pLotVacancy }}</td>
+                            <td>{{ lot.pLotDesc }}</td>
+                        </tr>
+                        <tr *ngIf="!lots.length">
+                            <td>&nbsp;</td>
+                            <td colspan="6">No Records Found</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
