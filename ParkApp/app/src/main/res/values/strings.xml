@@ -4,4 +4,6 @@
     <string name="valet">Valet</string>
     <string name="near">Near</string>
     <string name="view_map">View Map</string>
+    <string name="simple_fast_reliable">Simple, fast, reliable</string>
+    <string name="parkme">ParkMe</string>
 </resources>

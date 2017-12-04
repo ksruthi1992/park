@@ -3,6 +3,7 @@ package com.nolanroe.parkapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
 
 
 /**
@@ -26,7 +27,7 @@ public class ValetActivity extends AppCompatActivity {
 //        Intent intent = new Intent(this, NavigatorActivity.class);
 //        intent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
 //        startActivity(intent);
-
+        Toast.makeText(ValetActivity.this, "Found you the best parking spot.. Just drive!", Toast.LENGTH_SHORT).show(); //
         Intent intent = new Intent(this, NavigatorActivity.class);
         startActivity(intent);
     }

@@ -25,7 +25,7 @@ public class FrontPageActivity extends Activity {
     {
         if (view == findViewById(R.id.valet))
         {
-            Intent i = new Intent(getApplicationContext(), NavigatorActivity.class);
+            Intent i = new Intent(getApplicationContext(), ValetActivity.class);
             startActivity(i);
         }
 

@@ -45,7 +45,7 @@
             android:label="ValetActivity" />
         <activity
             android:name=".NearActivity"
-            android:label="ValetActivity" />
+            android:label="Building Search" />
         <activity
             android:name=".FrontPageActivity"
             android:label="Park App" />
