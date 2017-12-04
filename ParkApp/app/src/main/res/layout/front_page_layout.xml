@@ -16,7 +16,7 @@
         <ImageView
             android:layout_width="86dp"
             android:layout_height="86dp"
-            android:src="@drawable/parking_emblem"
+            android:src="@drawable/park_logo"
             />
 
         <LinearLayout

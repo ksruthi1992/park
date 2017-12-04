@@ -62,13 +62,12 @@ public class NearActivity extends AppCompatActivity {
         });
 
         /*Added by Hugo: Test of what will happen when selecting selecting building from list
-        *Made the WHOLE list clickable and added closest Parking lots to each building for now
         */
         listBuildings.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String text = listBuildings.getItemAtPosition(position).toString();//first method
-                //Lot 2 //2/37
+                //Lot 2
                 if (text.equals("Draper Hall") || text.equals("Sierra Hall") || text.equals("Jenkins Hall") || text.equals("Desmond Hall") || text.equals("Dining Commons")){
                     Toast.makeText(NearActivity.this, "Best Lot Found: LOT 2\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
                     dummyGeoCoords.add("38.565985");
@@ -78,7 +77,7 @@ public class NearActivity extends AppCompatActivity {
                     startActivity(myIntent);
                 }
 
-                //Student Lot 2  //7/37
+                //Student Lot 2
                 if (text.equals("Shasta Hall") || text.equals("River Front Center") ){
                     Toast.makeText(NearActivity.this, "Best Lot Found: STUDENT LOT 2\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
                     dummyGeoCoords.add("38.564094");
@@ -88,7 +87,7 @@ public class NearActivity extends AppCompatActivity {
                     startActivity(myIntent);
                 }
 
-                //Lot 1  //15/37
+                //Lot 1
                 if (text.equals("Sacramento Hall") || text.equals("Lassen Hall") || text.equals("Yosemite Hall") || text.equals("Solano Hall")
                     || text.equals("Douglass Hall") || text.equals("Kadema Hall") || text.equals("Alpine Hall")){
                     Toast.makeText(NearActivity.this, "Best Lot Found: LOT 1\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
@@ -99,7 +98,7 @@ public class NearActivity extends AppCompatActivity {
                     startActivity(myIntent);
                 }
 
-                //Lot 7  //18/37
+                //Lot 7
                 if (text.equals("El Dorado Hall") || text.equals("Art Sculpture Lab") || text.equals("Child Development Center")){
                     Toast.makeText(NearActivity.this, "Best Lot Found: LOT 7\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
                     dummyGeoCoords.add("38.556179");
@@ -109,8 +108,8 @@ public class NearActivity extends AppCompatActivity {
                     startActivity(myIntent);
                 }
 
-                //Lot 8  //22/37
-                if (text.equals("Union") || text.equals("Hornet Stadium") || text.equals("Tahoe Hall") || text.equals("Benicia Hall")) {
+                //Lot 8
+                if (text.equals("Union") || text.equals("Hornet Stadium") || text.equals("Tahoe Hall") || text.equals("Benecia Hall")) {
                     Toast.makeText(NearActivity.this, "Best Lot Found: LOT 8\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
                     dummyGeoCoords.add("38.556152");
                     dummyGeoCoords.add("-121.420716");
@@ -119,8 +118,8 @@ public class NearActivity extends AppCompatActivity {
                     startActivity(myIntent);
                 }
 
-                //Parking Struct 1 //26/37
-                if (text.equals("Capistrano Hall") || text.equals("Brighton Hall") || text.equals("Eureka Hall") || text.equals("Mariposa Hall")) {
+                //Parking Struct 1
+                if (text.equals("Capistrano Hall") || text.equals("Brighton Hall") || text.equals("Eureka Hall") || text.equals("Mariposa Hall") || text.equals("Amador Hall")) {
                     Toast.makeText(NearActivity.this, "Found: PARKING STRUCTURE 1\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
                     dummyGeoCoords.add("38.559441");
                     dummyGeoCoords.add("-121.426895");
@@ -129,9 +128,9 @@ public class NearActivity extends AppCompatActivity {
                     startActivity(myIntent);
                 }
 
-                //Parking Struct 3 //33/37
-                if (text.equals("The Well") || text.equals("AIRC") || text.equals("Library") || text.equals("Mariposa Hall")
-                        || text.equals("Placer Hall") || text.equals("Homboldt Hall") || text.equals("Santa Clara Hall")) {
+                //Parking Struct 3
+                if (text.equals("The Well") || text.equals("AIRC") || text.equals("Library") || text.equals("Placer Hall") || text.equals("Homboldt Hall")
+                        || text.equals("Santa Clara Hall")) {
                     Toast.makeText(NearActivity.this, "Found: PARKING STRUCTURE 3\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
                     dummyGeoCoords.add("38.556882");
                     dummyGeoCoords.add("-121.420941");
@@ -140,9 +139,9 @@ public class NearActivity extends AppCompatActivity {
                     startActivity(myIntent);
                 }
 
-                //Parking Struct 2 //27/37
-                if (text.equals("Hornet Bookstore") || text.equals("AIRC") || text.equals("Library") || text.equals("Mariposa Hall")
-                        || text.equals("Mendocino Hall") || text.equals("Sequioa Hall") || text.equals("Riverside Hall")) {
+                //Parking Struct 2
+                if (text.equals("Hornet Bookstore") || text.equals("AIRC") || text.equals("Library") || text.equals("Mendocino Hall") || text.equals("Sequioa Hall")
+                        || text.equals("Riverside Hall")) {
                     Toast.makeText(NearActivity.this, "Found: PARKING STRUCTURE 2\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
                     dummyGeoCoords.add("38.559037");
                     dummyGeoCoords.add("-121.420265");

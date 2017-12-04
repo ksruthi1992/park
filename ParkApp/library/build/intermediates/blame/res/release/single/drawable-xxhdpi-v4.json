@@ -1,19 +1,15 @@
 [
     {
-        "merged": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png",
-        "source": "C:\\Users\\Danolanater\\.android\\build-cache\\75b0b16cd966146b3027cdb79e78e9ce9987fa09\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png"
-    },
-    {
-        "merged": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_ic_googleplayservices.png",
-        "source": "C:\\Users\\Danolanater\\.android\\build-cache\\75b0b16cd966146b3027cdb79e78e9ce9987fa09\\output\\res\\drawable-xxhdpi-v4\\common_ic_googleplayservices.png"
-    },
-    {
-        "merged": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal.9.png",
-        "source": "C:\\Users\\Danolanater\\.android\\build-cache\\75b0b16cd966146b3027cdb79e78e9ce9987fa09\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal.9.png"
-    },
-    {
         "merged": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_pressed.9.png",
         "source": "C:\\Users\\Danolanater\\.android\\build-cache\\75b0b16cd966146b3027cdb79e78e9ce9987fa09\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hugot\\Desktop\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_pressed.9.png",
+        "source": "C:\\Users\\hugot\\.android\\build-cache\\caa8c27e945d2651413b5b99a883d95fdc3658cb\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hugot\\Desktop\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_disabled.9.png",
+        "source": "C:\\Users\\hugot\\.android\\build-cache\\caa8c27e945d2651413b5b99a883d95fdc3658cb\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_disabled.9.png"
     },
     {
         "merged": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_pressed.9.png",
@@ -28,32 +24,40 @@
         "source": "C:\\Users\\Danolanater\\.android\\build-cache\\75b0b16cd966146b3027cdb79e78e9ce9987fa09\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png"
     },
     {
-        "merged": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\amu_bubble_shadow.9.png",
-        "source": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\res\\drawable-xxhdpi\\amu_bubble_shadow.9.png"
+        "merged": "C:\\Users\\hugot\\Desktop\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_pressed.9.png",
+        "source": "C:\\Users\\hugot\\.android\\build-cache\\caa8c27e945d2651413b5b99a883d95fdc3658cb\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_pressed.9.png"
     },
     {
-        "merged": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_focused.9.png",
-        "source": "C:\\Users\\Danolanater\\.android\\build-cache\\75b0b16cd966146b3027cdb79e78e9ce9987fa09\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_focused.9.png"
+        "merged": "C:\\Users\\hugot\\Desktop\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_disabled.9.png",
+        "source": "C:\\Users\\hugot\\.android\\build-cache\\caa8c27e945d2651413b5b99a883d95fdc3658cb\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_disabled.9.png"
     },
     {
         "merged": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\amu_bubble_mask.9.png",
         "source": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\res\\drawable-xxhdpi\\amu_bubble_mask.9.png"
     },
     {
-        "merged": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal.9.png",
-        "source": "C:\\Users\\Danolanater\\.android\\build-cache\\75b0b16cd966146b3027cdb79e78e9ce9987fa09\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal.9.png"
+        "merged": "C:\\Users\\hugot\\Desktop\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_pressed.9.png",
+        "source": "C:\\Users\\hugot\\.android\\build-cache\\caa8c27e945d2651413b5b99a883d95fdc3658cb\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_pressed.9.png"
     },
     {
-        "merged": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal.9.png",
-        "source": "C:\\Users\\Danolanater\\.android\\build-cache\\75b0b16cd966146b3027cdb79e78e9ce9987fa09\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal.9.png"
+        "merged": "C:\\Users\\hugot\\Desktop\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png",
+        "source": "C:\\Users\\hugot\\.android\\build-cache\\caa8c27e945d2651413b5b99a883d95fdc3658cb\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png"
     },
     {
         "merged": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_pressed.9.png",
         "source": "C:\\Users\\Danolanater\\.android\\build-cache\\75b0b16cd966146b3027cdb79e78e9ce9987fa09\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_pressed.9.png"
     },
     {
-        "merged": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_disabled.9.png",
-        "source": "C:\\Users\\Danolanater\\.android\\build-cache\\75b0b16cd966146b3027cdb79e78e9ce9987fa09\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_disabled.9.png"
+        "merged": "C:\\Users\\hugot\\Desktop\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_focused.9.png",
+        "source": "C:\\Users\\hugot\\.android\\build-cache\\caa8c27e945d2651413b5b99a883d95fdc3658cb\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_focused.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hugot\\Desktop\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_disabled.9.png",
+        "source": "C:\\Users\\hugot\\.android\\build-cache\\caa8c27e945d2651413b5b99a883d95fdc3658cb\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_disabled.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hugot\\Desktop\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_ic_googleplayservices.png",
+        "source": "C:\\Users\\hugot\\.android\\build-cache\\caa8c27e945d2651413b5b99a883d95fdc3658cb\\output\\res\\drawable-xxhdpi-v4\\common_ic_googleplayservices.png"
     },
     {
         "merged": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_focused.9.png",
@@ -68,6 +72,14 @@
         "source": "C:\\Users\\Danolanater\\.android\\build-cache\\75b0b16cd966146b3027cdb79e78e9ce9987fa09\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_disabled.9.png"
     },
     {
+        "merged": "C:\\Users\\hugot\\Desktop\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_pressed.9.png",
+        "source": "C:\\Users\\hugot\\.android\\build-cache\\caa8c27e945d2651413b5b99a883d95fdc3658cb\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hugot\\Desktop\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png",
+        "source": "C:\\Users\\hugot\\.android\\build-cache\\caa8c27e945d2651413b5b99a883d95fdc3658cb\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png"
+    },
+    {
         "merged": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_focused.9.png",
         "source": "C:\\Users\\Danolanater\\.android\\build-cache\\75b0b16cd966146b3027cdb79e78e9ce9987fa09\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_focused.9.png"
     },
@@ -78,5 +90,73 @@
     {
         "merged": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_disabled.9.png",
         "source": "C:\\Users\\Danolanater\\.android\\build-cache\\75b0b16cd966146b3027cdb79e78e9ce9987fa09\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_disabled.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hugot\\Desktop\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_focused.9.png",
+        "source": "C:\\Users\\hugot\\.android\\build-cache\\caa8c27e945d2651413b5b99a883d95fdc3658cb\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_focused.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png",
+        "source": "C:\\Users\\Danolanater\\.android\\build-cache\\75b0b16cd966146b3027cdb79e78e9ce9987fa09\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_ic_googleplayservices.png",
+        "source": "C:\\Users\\Danolanater\\.android\\build-cache\\75b0b16cd966146b3027cdb79e78e9ce9987fa09\\output\\res\\drawable-xxhdpi-v4\\common_ic_googleplayservices.png"
+    },
+    {
+        "merged": "C:\\Users\\hugot\\Desktop\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_focused.9.png",
+        "source": "C:\\Users\\hugot\\.android\\build-cache\\caa8c27e945d2651413b5b99a883d95fdc3658cb\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_focused.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal.9.png",
+        "source": "C:\\Users\\Danolanater\\.android\\build-cache\\75b0b16cd966146b3027cdb79e78e9ce9987fa09\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hugot\\Desktop\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_full_open_on_phone.png",
+        "source": "C:\\Users\\hugot\\.android\\build-cache\\caa8c27e945d2651413b5b99a883d95fdc3658cb\\output\\res\\drawable-xxhdpi-v4\\common_full_open_on_phone.png"
+    },
+    {
+        "merged": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\amu_bubble_shadow.9.png",
+        "source": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\res\\drawable-xxhdpi\\amu_bubble_shadow.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_focused.9.png",
+        "source": "C:\\Users\\Danolanater\\.android\\build-cache\\75b0b16cd966146b3027cdb79e78e9ce9987fa09\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_focused.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal.9.png",
+        "source": "C:\\Users\\Danolanater\\.android\\build-cache\\75b0b16cd966146b3027cdb79e78e9ce9987fa09\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hugot\\Desktop\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\amu_bubble_shadow.9.png",
+        "source": "C:\\Users\\hugot\\Desktop\\park\\ParkApp\\library\\res\\drawable-xxhdpi\\amu_bubble_shadow.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hugot\\Desktop\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal.9.png",
+        "source": "C:\\Users\\hugot\\.android\\build-cache\\caa8c27e945d2651413b5b99a883d95fdc3658cb\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal.9.png",
+        "source": "C:\\Users\\Danolanater\\.android\\build-cache\\75b0b16cd966146b3027cdb79e78e9ce9987fa09\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_disabled.9.png",
+        "source": "C:\\Users\\Danolanater\\.android\\build-cache\\75b0b16cd966146b3027cdb79e78e9ce9987fa09\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_disabled.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hugot\\Desktop\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\amu_bubble_mask.9.png",
+        "source": "C:\\Users\\hugot\\Desktop\\park\\ParkApp\\library\\res\\drawable-xxhdpi\\amu_bubble_mask.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hugot\\Desktop\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal.9.png",
+        "source": "C:\\Users\\hugot\\.android\\build-cache\\caa8c27e945d2651413b5b99a883d95fdc3658cb\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hugot\\Desktop\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal.9.png",
+        "source": "C:\\Users\\hugot\\.android\\build-cache\\caa8c27e945d2651413b5b99a883d95fdc3658cb\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hugot\\Desktop\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_focused.9.png",
+        "source": "C:\\Users\\hugot\\.android\\build-cache\\caa8c27e945d2651413b5b99a883d95fdc3658cb\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_focused.9.png"
     }
 ]

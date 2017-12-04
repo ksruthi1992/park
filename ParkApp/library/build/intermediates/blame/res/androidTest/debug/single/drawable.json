@@ -1,11 +1,19 @@
 [
     {
+        "merged": "C:\\Users\\hugot\\Desktop\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
+        "source": "C:\\Users\\hugot\\.android\\build-cache\\caa8c27e945d2651413b5b99a883d95fdc3658cb\\output\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+    },
+    {
         "merged": "C:\\Users\\Cecilia Dominguez\\Documents\\CSC131\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
         "source": "C:\\Users\\Cecilia Dominguez\\.android\\build-cache\\2122534b7f89582238949710db501c7604c25e3d\\output\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
     },
     {
         "merged": "C:\\Users\\Cecilia Dominguez\\Documents\\CSC131\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
         "source": "C:\\Users\\Cecilia Dominguez\\.android\\build-cache\\2122534b7f89582238949710db501c7604c25e3d\\output\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\hugot\\Desktop\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
+        "source": "C:\\Users\\hugot\\.android\\build-cache\\caa8c27e945d2651413b5b99a883d95fdc3658cb\\output\\res\\drawable\\common_google_signin_btn_icon_light.xml"
     },
     {
         "merged": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
@@ -30,5 +38,13 @@
     {
         "merged": "C:\\Users\\Danolanater\\Desktop\\School\\Sac State\\Software Engineering\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\common_google_signin_btn_text_light.xml",
         "source": "C:\\Users\\Danolanater\\.android\\build-cache\\75b0b16cd966146b3027cdb79e78e9ce9987fa09\\output\\res\\drawable\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\hugot\\Desktop\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\hugot\\.android\\build-cache\\caa8c27e945d2651413b5b99a883d95fdc3658cb\\output\\res\\drawable\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\hugot\\Desktop\\park\\ParkApp\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\hugot\\.android\\build-cache\\caa8c27e945d2651413b5b99a883d95fdc3658cb\\output\\res\\drawable\\common_google_signin_btn_text_dark.xml"
     }
 ]

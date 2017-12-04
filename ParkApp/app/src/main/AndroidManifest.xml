@@ -16,6 +16,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -46,14 +48,15 @@
             android:label="ValetActivity" />
         <activity
             android:name=".FrontPageActivity"
-            android:label="FrontPage" />
+            android:label="Park App" />
         <activity
             android:name=".Lot7Activity"
             android:label="Lot7" />
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".ValetActivity"></activity>
+        <activity
+            android:name=".ValetActivity"></activity>
     </application>
 
 </manifest>
