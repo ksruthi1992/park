@@ -134,5 +134,18 @@
 
     </RelativeLayout>
 
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:ems="10"
+        android:text="Hint: Tap the app logo and say the name of the " />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:ems="10"
+        android:text="building you wish to park near." />
+
+
 
 </LinearLayout>

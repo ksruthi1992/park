@@ -16,8 +16,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,6 +42,9 @@
             android:name=".NavigatorActivity"
             android:label="ValetActivity" />
         <activity
+            android:name=".NearActivityVoice"
+            android:label="Building Search" />
+        <activity
             android:name=".NearActivity"
             android:label="Building Search" />
         <activity
@@ -56,7 +57,9 @@
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
         <activity
-            android:name=".ValetActivity"></activity>
+            android:name=".ValetActivity"
+            android:label="Valet" />
+
     </application>
 
 </manifest>

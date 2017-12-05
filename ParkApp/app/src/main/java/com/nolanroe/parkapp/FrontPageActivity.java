@@ -21,13 +21,11 @@ public class FrontPageActivity extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.front_page_layout);
         ImageButton theMicButton = (ImageButton) findViewById(R.id.micButton);
-        //final NearActivity start = new NearActivity();
         theMicButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), NearActivity.class);
+                Intent i = new Intent(getApplicationContext(), NearActivityVoice.class);
                 startActivity(i);
-                //start.micButton.performClick();
             }
         });
     }

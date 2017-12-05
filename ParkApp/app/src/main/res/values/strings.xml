@@ -6,4 +6,5 @@
     <string name="view_map">View Map</string>
     <string name="simple_fast_reliable">Simple, fast, reliable</string>
     <string name="parkme">ParkMe</string>
+    <string name="title_activity_navigator_voice">NavigatorActivityVoice</string>
 </resources>
