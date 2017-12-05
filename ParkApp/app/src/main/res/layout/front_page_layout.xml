@@ -13,10 +13,11 @@
         android:orientation="horizontal"
         >
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/micButton"
             android:layout_width="86dp"
             android:layout_height="86dp"
-            android:src="@drawable/park_logo"
+            android:src="@drawable/park_logo2"
             />
 
         <LinearLayout
@@ -90,7 +91,7 @@
 
 
     </RelativeLayout>
-    
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -128,8 +129,8 @@
             android:textColor="#FFFFFF"
             android:onClick="buttonPressed"
             android:text="@string/near" />
-        
-        
+
+
 
     </RelativeLayout>
 
