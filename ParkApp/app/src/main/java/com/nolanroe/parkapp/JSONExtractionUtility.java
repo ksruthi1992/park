@@ -1,6 +1,11 @@
 package com.nolanroe.parkapp;
 
+import android.text.TextUtils;
 import android.util.Log;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -17,9 +22,9 @@ import java.nio.charset.Charset;
 
 public final class JSONExtractionUtility {
 
-    public static ParkingSpot fetchParkingSpotCoordinates(String requestURL) {
+    public ParkingSpot fetchParkingSpotCoordinates(String requestURL) {
         //dummy object to be deleted once implementation for extractFeatureFromJSON is done
-        ParkingSpot spot = new ParkingSpot("38.5564516", "-121.421872");
+        //ParkingSpot spot = new ParkingSpot("38.5564516", "-121.421872");
 
         // Create URL object
         URL url = createUrl(requestURL);
@@ -33,8 +38,7 @@ public final class JSONExtractionUtility {
         }
 
         // Extract whatever fields needed from the JSON and create an object with those properties
-        // TODO: implement the extractFeatureFromJSON method
-        // ParkingSpot spot = extractFeatureFromJSON(jsonResponse);
+         ParkingSpot spot = extractFeatureFromJSON(jsonResponse);
 
         // Return the parking spot
         return spot;
@@ -99,4 +103,26 @@ public final class JSONExtractionUtility {
         return output.toString();
     }
 
+    private ParkingSpot extractFeatureFromJSON(String parkingSpotJson) {
+        if(TextUtils.isEmpty(parkingSpotJson))
+            return null;
+
+        try {
+            JSONObject baseJsonResponse = new JSONObject(parkingSpotJson);
+            JSONArray spotArray = baseJsonResponse.getJSONArray("spots");
+
+            if(spotArray.length() > 0) {
+                JSONObject firstSpot = spotArray.getJSONObject(0);
+                JSONObject coordinates = firstSpot.getJSONObject("coordinates");
+
+                String latitude = coordinates.getString("latitude");
+                String longitude = coordinates.getString("longitude");
+
+                return new ParkingSpot(latitude,longitude);
+            }
+        } catch (JSONException e){
+            Log.e("You dun fk'd up", "Problem parsing the JSON results", e);
+        }
+        return null;
+    }
 }
