@@ -1,18 +1,48 @@
 package com.nolanroe.parkapp;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.annotation.Nullable;
+import android.view.View;
+import android.view.Window;
+import android.widget.ImageButton;
 
-public class MainActivity extends AppCompatActivity {
+/**
+ * Created by Danolanater on 10/23/2017.
+ */
+
+public class MainActivity extends Activity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        //create an intent to get over to FrontPageActivity class
-        Intent i = new Intent(this, FrontPageActivity.class);
-        startActivity(i);
-
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_main);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        setContentView(R.layout.front_page_layout);
+        ImageButton theMicButton = (ImageButton) findViewById(R.id.micButton);
+        theMicButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), NearActivityVoice.class);
+                startActivity(i);
+            }
+        });
     }
+
+    public void buttonPressed(View view)
+    {
+        if (view == findViewById(R.id.valet))
+        {
+            Intent i = new Intent(getApplicationContext(), ValetActivity.class);
+            startActivity(i);
+        }
+
+        else if (view == findViewById(R.id.near))
+        {
+            Intent i = new Intent(getApplicationContext(), NearActivity.class);
+            startActivity(i);
+
+        }
+    }
+
 }
