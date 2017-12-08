@@ -1,11 +1,1 @@
-HOST
-parkme.documents.azure.com
-
-PORT
-10255
-
-USERNAME
-parkme
-
-PRIMARY
-PMHqtUwwQZqJfpSCY91Lr3oCJy94jKbinwBnN34RRVuzzxcYjcMlGIMGcmqvY8yYeHIfw4KnNywiXZOI41YsuA==
+Creds no longer posted as team development is completed.
