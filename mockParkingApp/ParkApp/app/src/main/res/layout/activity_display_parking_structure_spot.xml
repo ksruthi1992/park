@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4pt">
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PARKING STRUCTURE:"
+        android:textSize="40sp"
+        android:textColor="#000000"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="12dp"
+        android:background="@layout/relativelayout_custom_create">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:id="@+id/structNum"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FLOOR:"
+        android:textSize="40dp"
+        android:textColor="#000000"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@layout/relativelayout_custom_create"
+        android:padding="12dp"
+        android:layout_marginTop="16dp">
+
+
+        <TextView
+            android:id="@+id/floorNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="28sp" />
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ISLE:"
+        android:textSize="40sp"
+        android:textColor="#000000"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@layout/relativelayout_custom_create"
+        android:padding="12dp"
+        android:layout_marginTop="16dp">
+
+
+        <TextView
+            android:id="@+id/isleNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="28sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/newSpot"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#df1f01"
+        android:textColor="#FFFFFF"
+        android:text="@string/new_spot" />
+
+
+
+
+</LinearLayout>
+

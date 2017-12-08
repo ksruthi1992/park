@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ParkApp</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="valet">Valet</string>
+    <string name="near">Near</string>
+    <string name="view_map">View Map</string>
+    <string name="simple_fast_reliable">Simple, fast, reliable</string>
+    <string name="parkme">ParkMe</string>
+    <string name="title_activity_navigator_voice">NavigatorActivityVoice</string>
+    <string name="title_activity_display_parking_structure_spot">displayParkingStructureSpot
+    </string>
+    <string name="new_spot">NEW SPOT</string>
+</resources>
