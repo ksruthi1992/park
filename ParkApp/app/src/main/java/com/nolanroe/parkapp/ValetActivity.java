@@ -2,7 +2,7 @@ package com.nolanroe.parkapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.FragmentActivity;
 import android.widget.Toast;
 
 
@@ -10,7 +10,7 @@ import android.widget.Toast;
  * Created by Hugo on 10/31/2017.
  */
 
-public class ValetActivity extends AppCompatActivity {
+public class ValetActivity extends FragmentActivity {
 
 //    String dummyLat = "38.5564516";
 //    String dummyLong = "-121.421872";
@@ -30,5 +30,6 @@ public class ValetActivity extends AppCompatActivity {
         Toast.makeText(ValetActivity.this, "Found you the best parking spot.. Just drive!", Toast.LENGTH_SHORT).show(); //
         Intent intent = new Intent(this, NavigatorActivity.class);
         startActivity(intent);
+        finish();
     }
 }

@@ -41,7 +41,6 @@ public class MainActivity extends Activity {
         {
             Intent i = new Intent(getApplicationContext(), NearActivity.class);
             startActivity(i);
-
         }
     }
 
