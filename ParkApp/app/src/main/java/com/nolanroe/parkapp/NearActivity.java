@@ -26,6 +26,9 @@ public class NearActivity extends FragmentActivity implements View.OnClickListen
     public ListView mList;
     public Button micButton;
     public static final int VOICE_RECOGNITION_REQUEST_CODE = 1234;
+    private String url = "https://parkmecsus.wordpress.com/rest/";
+    private String latLocation = "";
+    private String lonLocation = "";
 
 
     @Nullable
@@ -76,8 +79,10 @@ public class NearActivity extends FragmentActivity implements View.OnClickListen
                     Toast.makeText(NearActivity.this, "Best Lot Found: LOT 2\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
                     dummyGeoCoords.add("38.565985");
                     dummyGeoCoords.add("-121.424618");
+                    url = url + "?method=near&latitude=" + latLocation + "&longitude" + lonLocation;
                     Intent myIntent = new Intent(view.getContext(), NavigatorActivity.class);
                     myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
+                    myIntent.putExtra("url", url);
                     startActivity(myIntent);
                 }
 
@@ -86,8 +91,10 @@ public class NearActivity extends FragmentActivity implements View.OnClickListen
                     Toast.makeText(NearActivity.this, "Best Lot Found: STUDENT LOT 2\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
                     dummyGeoCoords.add("38.564094");
                     dummyGeoCoords.add("-121.253284");
+                    url = url + "?method=near&latitude=" + latLocation + "&longitude" + lonLocation;
                     Intent myIntent = new Intent(view.getContext(), NavigatorActivity.class);
                     myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
+                    myIntent.putExtra("url", url);
                     startActivity(myIntent);
                 }
 
@@ -97,8 +104,10 @@ public class NearActivity extends FragmentActivity implements View.OnClickListen
                     Toast.makeText(NearActivity.this, "Best Lot Found: LOT 1\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
                     dummyGeoCoords.add("38.563318");
                     dummyGeoCoords.add("-121.428851");
+                    url = url + "?method=near&latitude=" + latLocation + "&longitude" + lonLocation;
                     Intent myIntent = new Intent(view.getContext(), NavigatorActivity.class);
                     myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
+                    myIntent.putExtra("url", url);
                     startActivity(myIntent);
                 }
 
@@ -107,8 +116,10 @@ public class NearActivity extends FragmentActivity implements View.OnClickListen
                     Toast.makeText(NearActivity.this, "Best Lot Found: LOT 7\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
                     dummyGeoCoords.add("38.556179");
                     dummyGeoCoords.add("-121.419705");
+                    url = url + "?method=near&latitude=" + latLocation + "&longitude" + lonLocation;
                     Intent myIntent = new Intent(view.getContext(), NavigatorActivity.class);
                     myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
+                    myIntent.putExtra("url", url);
                     startActivity(myIntent);
                 }
 
@@ -117,8 +128,10 @@ public class NearActivity extends FragmentActivity implements View.OnClickListen
                     Toast.makeText(NearActivity.this, "Best Lot Found: LOT 8\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
                     dummyGeoCoords.add("38.556152");
                     dummyGeoCoords.add("-121.420716");
+                    url = url + "?method=near&latitude=" + latLocation + "&longitude" + lonLocation;
                     Intent myIntent = new Intent(view.getContext(), NavigatorActivity.class);
                     myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
+                    myIntent.putExtra("url", url);
                     startActivity(myIntent);
                 }
 
@@ -127,8 +140,10 @@ public class NearActivity extends FragmentActivity implements View.OnClickListen
                     Toast.makeText(NearActivity.this, "Found: PARKING STRUCTURE 1\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
                     dummyGeoCoords.add("38.559441");
                     dummyGeoCoords.add("-121.426895");
+                    url = url + "?method=near&latitude=" + latLocation + "&longitude" + lonLocation;
                     Intent myIntent = new Intent(view.getContext(), NavigatorActivity.class);
                     myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
+                    myIntent.putExtra("url", url);
                     startActivity(myIntent);
                 }
 
@@ -138,8 +153,10 @@ public class NearActivity extends FragmentActivity implements View.OnClickListen
                     Toast.makeText(NearActivity.this, "Found: PARKING STRUCTURE 3\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
                     dummyGeoCoords.add("38.556882");
                     dummyGeoCoords.add("-121.420941");
+                    url = url + "?method=near&latitude=" + latLocation + "&longitude" + lonLocation;
                     Intent myIntent = new Intent(view.getContext(), NavigatorActivity.class);
                     myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
+                    myIntent.putExtra("url", url);
                     startActivity(myIntent);
                 }
 
@@ -149,8 +166,10 @@ public class NearActivity extends FragmentActivity implements View.OnClickListen
                     Toast.makeText(NearActivity.this, "Found: PARKING STRUCTURE 2\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
                     dummyGeoCoords.add("38.559037");
                     dummyGeoCoords.add("-121.420265");
+                    url = url + "?method=near&latitude=" + latLocation + "&longitude" + lonLocation;
                     Intent myIntent = new Intent(view.getContext(), NavigatorActivity.class);
                     myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
+                    myIntent.putExtra("url", url);
                     startActivity(myIntent);
                 }
                 //Lot 10
@@ -189,8 +208,10 @@ public class NearActivity extends FragmentActivity implements View.OnClickListen
                 Toast.makeText(NearActivity.this, "Best Lot Found: LOT 2\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
                 dummyGeoCoords.add("38.565985");
                 dummyGeoCoords.add("-121.424618");
+                url = url + "?method=near&latitude=" + latLocation + "&longitude" + lonLocation;
                 Intent myIntent = new Intent(this, NavigatorActivity.class);
                 myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
+                myIntent.putExtra("url", url);
                 startActivity(myIntent);
             }
 
@@ -200,8 +221,10 @@ public class NearActivity extends FragmentActivity implements View.OnClickListen
                 Toast.makeText(NearActivity.this, "Best Lot Found: STUDENT LOT 2\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
                 dummyGeoCoords.add("38.564094");
                 dummyGeoCoords.add("-121.253284");
+                url = url + "?method=near&latitude=" + latLocation + "&longitude" + lonLocation;
                 Intent myIntent = new Intent(this, NavigatorActivity.class);
                 myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
+                myIntent.putExtra("url", url);
                 startActivity(myIntent);
             }
 
@@ -216,8 +239,10 @@ public class NearActivity extends FragmentActivity implements View.OnClickListen
                 Toast.makeText(NearActivity.this, "Best Lot Found: LOT 1\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
                 dummyGeoCoords.add("38.563318");
                 dummyGeoCoords.add("-121.428851");
+                url = url + "?method=near&latitude=" + latLocation + "&longitude" + lonLocation;
                 Intent myIntent = new Intent(this, NavigatorActivity.class);
                 myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
+                myIntent.putExtra("url", url);
                 startActivity(myIntent);
             }
 
@@ -228,8 +253,10 @@ public class NearActivity extends FragmentActivity implements View.OnClickListen
                 Toast.makeText(NearActivity.this, "Best Lot Found: LOT 7\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
                 dummyGeoCoords.add("38.556179");
                 dummyGeoCoords.add("-121.419705");
+                url = url + "?method=near&latitude=" + latLocation + "&longitude" + lonLocation;
                 Intent myIntent = new Intent(this, NavigatorActivity.class);
                 myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
+                myIntent.putExtra("url", url);
                 startActivity(myIntent);
             }
 
@@ -241,8 +268,10 @@ public class NearActivity extends FragmentActivity implements View.OnClickListen
                 Toast.makeText(NearActivity.this, "Best Lot Found: LOT 8\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
                 dummyGeoCoords.add("38.556152");
                 dummyGeoCoords.add("-121.420716");
+                url = url + "?method=near&latitude=" + latLocation + "&longitude" + lonLocation;
                 Intent myIntent = new Intent(this, NavigatorActivity.class);
                 myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
+                myIntent.putExtra("url", url);
                 startActivity(myIntent);
             }
 
@@ -255,8 +284,10 @@ public class NearActivity extends FragmentActivity implements View.OnClickListen
                 Toast.makeText(NearActivity.this, "Found: PARKING STRUCTURE 1\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
                 dummyGeoCoords.add("38.559441");
                 dummyGeoCoords.add("-121.426895");
+                url = url + "?method=near&latitude=" + latLocation + "&longitude" + lonLocation;
                 Intent myIntent = new Intent(this, NavigatorActivity.class);
                 myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
+                myIntent.putExtra("url", url);
                 startActivity(myIntent);
             }
 
@@ -270,8 +301,10 @@ public class NearActivity extends FragmentActivity implements View.OnClickListen
                 Toast.makeText(NearActivity.this, "Found: PARKING STRUCTURE 3\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
                 dummyGeoCoords.add("38.556882");
                 dummyGeoCoords.add("-121.420941");
+                url = url + "?method=near&latitude=" + latLocation + "&longitude" + lonLocation;
                 Intent myIntent = new Intent(this, NavigatorActivity.class);
                 myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
+                myIntent.putExtra("url", url);
                 startActivity(myIntent);
             }
 
@@ -283,8 +316,10 @@ public class NearActivity extends FragmentActivity implements View.OnClickListen
                 Toast.makeText(NearActivity.this, "Found: PARKING STRUCTURE 2\nSearching for best parking space...", Toast.LENGTH_SHORT).show(); //
                 dummyGeoCoords.add("38.559037");
                 dummyGeoCoords.add("-121.420265");
+                url = url + "?method=near&latitude=" + latLocation + "&longitude" + lonLocation;
                 Intent myIntent = new Intent(this, NavigatorActivity.class);
                 myIntent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
+                myIntent.putExtra("url", url);
                 startActivity(myIntent);
             }
         }
