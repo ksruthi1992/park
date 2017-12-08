@@ -31,6 +31,7 @@ public class ValetActivity extends FragmentActivity {
     private Location location = null;
     private String latLocation;
     private String lonLocation;
+    private String url = "https://parkmecsus.wordpress.com/rest/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,16 +53,11 @@ public class ValetActivity extends FragmentActivity {
         Log.e("xyz", "" + latLocation);
         Log.e("xyz", "" + lonLocation);
 
-        
-//        /*Need to create a way to access users current location . From the current location find the best suitable parking lot
-//        then find the best parking space.*/
-//        dummyGeoCoords.add(dummyLat);
-//        dummyGeoCoords.add(dummyLong);
-//        Intent intent = new Intent(this, NavigatorActivity.class);
-//        intent.putStringArrayListExtra("geoCoords", (ArrayList<String>) dummyGeoCoords);
-//        startActivity(intent);
+        url = url + "?method=valet&latitdue=" + latLocation + "&longitude" + lonLocation;
+
         Toast.makeText(ValetActivity.this, "Found you the best parking spot.. Just drive!", Toast.LENGTH_SHORT).show(); //
         Intent intent = new Intent(this, NavigatorActivity.class);
+        intent.putExtra("url", url);
         startActivity(intent);
         finish();
     }

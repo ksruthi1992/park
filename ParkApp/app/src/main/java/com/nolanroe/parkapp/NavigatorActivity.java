@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.util.Log;
 
 /**
  * Created by Danolanater on 10/23/2017.
@@ -28,10 +29,14 @@ public class NavigatorActivity extends FragmentActivity {
 //        mapIntent.setPackage("com.google.android.apps.maps");
 //        startActivity(mapIntent);
 
-        String apiRequestURL = null;
+        Bundle extras = getIntent().getExtras();
 
+
+        String apiRequestURL = extras.getString("url");
+
+        Log.e("site", apiRequestURL);
         JSONExtractionUtility extractor = new JSONExtractionUtility();
-        ParkingSpot spot = extractor.fetchParkingSpotCoordinates(apiRequestURL);
+        ParkingSpot spot = extractor.fetchParkingSpotCoordinates("maps.google.com");
         Uri gmmIntentUri = Uri.parse("google.navigation:q=" + spot.latitude + "," + spot.longitude);
         Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
         mapIntent.setPackage("com.google.android.apps.maps");
