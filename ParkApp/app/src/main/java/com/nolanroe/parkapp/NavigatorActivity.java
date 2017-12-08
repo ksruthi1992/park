@@ -41,13 +41,13 @@ public class NavigatorActivity extends FragmentActivity implements OnMapReadyCal
 //        mapIntent.setPackage("com.google.android.apps.maps");
 //        startActivity(mapIntent);
 
-        ParkingSpot spot = JSONExtractionUtility.fetchParkingSpotCoordinates("www.google.com");
+        String apiRequestURL = null;
+
+        JSONExtractionUtility extractor = new JSONExtractionUtility();
+        ParkingSpot spot = extractor.fetchParkingSpotCoordinates(apiRequestURL);
         Uri gmmIntentUri = Uri.parse("google.navigation:q=" + spot.latitude + "," + spot.longitude);
         Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
         mapIntent.setPackage("com.google.android.apps.maps");
         startActivity(mapIntent);
-
-
-
     }
 }

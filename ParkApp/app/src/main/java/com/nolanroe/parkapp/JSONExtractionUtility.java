@@ -24,7 +24,7 @@ public final class JSONExtractionUtility {
 
     public ParkingSpot fetchParkingSpotCoordinates(String requestURL) {
         //dummy object to be deleted once implementation for extractFeatureFromJSON is done
-        //ParkingSpot spot = new ParkingSpot("38.5564516", "-121.421872");
+        ParkingSpot spot = new ParkingSpot("38.5564516", "-121.421872");
 
         // Create URL object
         URL url = createUrl(requestURL);
@@ -38,7 +38,7 @@ public final class JSONExtractionUtility {
         }
 
         // Extract whatever fields needed from the JSON and create an object with those properties
-         ParkingSpot spot = extractFeatureFromJSON(jsonResponse);
+        // ParkingSpot spot = extractFeatureFromJSON(jsonResponse);
 
         // Return the parking spot
         return spot;
