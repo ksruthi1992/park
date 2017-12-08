@@ -38,4 +38,5 @@ public class NavigatorActivity extends FragmentActivity {
         startActivity(mapIntent);
         finish();
     }
+
 }
